@@ -1,0 +1,829 @@
+2017-05-09 12:52:40,034 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 12:52:40,039 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 12:52:40,127 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 12:52:40,892 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 12:52:41,165 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 12:52:41,174 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 12:52:41,175 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 12:52:41,175 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 12:52:41,180 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 12:52:41,749 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 12:52:41,841 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 12:52:43,821 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 12:53:25,135 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 12:53:25,143 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 12:53:25,181 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 12:53:25,713 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 12:53:26,011 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 12:53:26,021 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 12:53:26,021 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 12:53:26,022 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 12:53:26,027 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 12:53:27,128 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 12:53:27,234 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 12:53:30,142 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 12:54:29,683 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 12:54:29,694 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 12:54:29,735 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 12:54:30,264 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 12:54:30,531 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 12:54:30,541 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 12:54:30,542 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 12:54:30,549 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 12:54:30,554 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 12:54:31,351 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 12:54:31,467 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 12:54:34,755 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 12:54:42,695 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 12:54:42,702 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 12:54:42,736 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 12:54:43,255 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 12:54:43,495 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 12:54:43,513 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 12:54:43,513 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 12:54:43,514 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 12:54:43,518 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 12:54:44,345 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 12:54:44,450 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 12:54:46,348 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:01:30,835 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:01:30,842 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:01:30,870 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:01:31,394 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:01:31,647 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:01:31,655 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:01:31,656 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:01:31,658 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:01:31,664 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:01:32,333 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:01:32,441 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:01:34,893 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:01:50,683 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:01:50,690 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:01:50,734 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:01:51,221 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:01:51,458 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:01:51,466 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:01:51,467 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:01:51,467 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:01:51,472 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:01:52,388 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:01:52,501 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:01:54,768 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:02:04,558 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:02:04,567 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:02:04,615 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:02:05,118 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:02:05,325 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:02:05,331 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:02:05,332 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:02:05,333 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:02:05,337 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:02:06,035 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:02:06,203 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:02:08,275 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:04:31,245 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:04:31,255 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:04:31,371 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:04:32,153 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:04:32,405 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:04:32,413 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:04:32,413 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:04:32,414 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:04:32,424 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:04:32,987 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:04:33,067 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:04:35,131 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:05:47,514 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:05:47,524 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:05:47,565 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:05:48,174 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:05:48,454 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:05:48,470 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:05:48,472 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:05:48,473 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:05:48,481 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:05:49,258 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:05:49,332 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:05:51,791 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:06:07,058 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:06:07,068 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:06:07,112 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:06:07,674 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:06:08,017 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:06:08,030 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:06:08,031 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:06:08,032 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:06:08,038 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:06:08,894 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:06:08,973 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:06:11,962 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:06:25,086 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:06:25,097 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:06:25,163 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:06:25,662 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:06:25,958 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:06:25,968 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:06:25,969 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:06:25,970 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:06:25,978 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:06:27,035 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:06:27,164 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:06:29,403 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:06:43,638 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:06:43,646 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:06:43,722 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:06:44,302 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:06:44,611 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:06:44,618 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:06:44,619 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:06:44,620 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:06:44,625 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:06:45,596 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:06:45,665 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:06:48,129 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:07:12,593 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:07:12,604 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:07:12,656 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:07:13,238 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:07:13,837 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:07:13,845 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:07:13,846 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:07:13,907 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:07:13,913 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:07:15,858 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:07:15,942 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:07:18,196 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:09:39,700 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:09:39,707 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:09:39,747 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:09:40,241 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:09:40,513 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:09:40,523 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:09:40,524 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:09:40,525 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:09:40,530 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:09:41,604 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:09:41,709 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:09:43,909 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:10:43,969 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:10:43,979 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:10:44,016 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:10:44,574 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:10:44,858 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:10:44,870 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:10:44,871 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:10:44,871 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:10:44,877 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:10:45,943 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:10:46,174 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:10:48,514 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:15:27,718 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:15:27,724 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:15:27,771 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:15:28,217 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:15:28,448 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:15:28,456 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:15:28,458 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:15:28,460 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:15:28,478 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:15:29,214 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:15:29,323 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:15:31,508 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:15:38,186 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:15:38,196 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:15:38,239 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:15:38,826 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:15:39,097 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:15:39,105 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:15:39,106 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:15:39,107 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:15:39,111 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:15:39,877 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:15:40,314 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:15:43,268 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:16:31,075 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:16:31,082 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:16:31,118 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:16:31,571 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:16:31,800 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:16:31,822 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:16:31,823 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:16:31,823 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:16:31,827 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:16:32,524 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:16:32,769 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:16:34,962 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:18:07,451 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:18:07,460 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:18:07,509 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:18:08,092 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:18:08,375 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:18:08,390 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:18:08,392 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:18:08,393 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:18:08,401 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:18:09,391 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:18:09,537 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:18:11,890 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:18:30,934 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:18:30,941 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:18:30,994 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:18:31,450 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:18:31,766 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:18:31,782 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:18:31,784 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:18:31,785 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:18:31,796 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:18:32,963 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:18:33,102 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:18:35,094 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6c806c8b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:20:35,569 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:20:35,580 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:20:35,623 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:20:36,130 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:20:36,405 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:20:36,412 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:20:36,413 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:20:36,414 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:20:36,421 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:20:37,291 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:20:37,423 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:20:40,011 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:21:20,113 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:21:20,120 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:21:20,160 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:21:20,665 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:21:20,938 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:21:20,946 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:21:20,947 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:21:20,948 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:21:20,953 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:21:21,596 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:21:21,700 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:21:24,217 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:38:51,665 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:38:51,673 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:38:51,712 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:38:52,346 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:38:52,595 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:38:52,604 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:38:52,605 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:38:52,605 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:38:52,611 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:38:53,579 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:38:53,681 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:38:55,776 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:39:11,720 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:39:11,727 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:39:11,762 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:39:12,299 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:39:12,801 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:39:12,818 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:39:12,819 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:39:12,820 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:39:12,825 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:39:13,656 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:39:13,776 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:39:15,764 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:39:59,985 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:39:59,996 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:40:00,036 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:40:00,583 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:40:01,194 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:40:01,201 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:40:01,202 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:40:01,203 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:40:01,208 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:40:02,122 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:40:02,387 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:40:04,890 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:40:32,107 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:40:32,116 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:40:32,152 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:40:32,659 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:40:32,894 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:40:32,903 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:40:32,904 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:40:32,905 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:40:32,915 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:40:33,848 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:40:33,946 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:40:36,469 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@650eab8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:42:14,854 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:42:14,870 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:42:14,918 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:42:15,489 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:42:15,853 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:42:15,872 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:42:15,873 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:42:15,875 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:42:15,883 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:42:16,927 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:42:17,086 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:42:19,475 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3f985a86] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:42:46,310 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:42:46,343 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:42:46,398 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:42:47,382 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:42:47,814 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:42:47,838 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:42:47,839 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:42:47,840 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:42:47,848 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:42:49,653 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:42:49,780 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:42:52,173 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@6dfcffb5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 13:45:06,446 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 13:45:06,454 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 13:45:06,506 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 13:45:07,058 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 13:45:07,436 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 13:45:07,625 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 13:45:07,626 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 13:45:07,626 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 13:45:07,632 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 13:45:08,689 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 13:45:08,778 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 13:45:10,891 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5633dafd] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:08:43,957 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:08:43,965 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:08:43,999 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:08:44,381 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:08:44,570 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:08:44,582 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:08:44,582 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:08:44,583 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:08:44,590 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:08:45,337 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:08:45,500 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:08:46,991 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:08:47,453 +0300 [main] ERROR (AbstractDao.java:46) - Error was thrown in DAO: org.hibernate.NonUniqueObjectException: A different object with the same identifier value was already associated with the session : [by.nc.training.dev3.coffee.entities.Beverage#1]
+2017-05-09 14:09:07,089 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:09:07,098 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:09:07,132 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:09:07,566 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:09:07,847 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:09:07,855 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:09:07,856 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:09:07,857 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:09:07,863 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:09:08,613 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:09:08,728 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:09:10,428 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d278b4d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:09:26,990 +0300 [main] ERROR (AbstractDao.java:46) - Error was thrown in DAO: org.hibernate.NonUniqueObjectException: A different object with the same identifier value was already associated with the session : [by.nc.training.dev3.coffee.entities.Beverage#1]
+2017-05-09 14:17:56,709 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:17:56,726 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:17:56,765 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:17:57,187 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:17:57,492 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:17:57,507 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:17:57,508 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:17:57,508 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:17:57,515 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:17:58,867 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:17:58,924 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:18:00,428 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14d8444b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:22:05,834 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:22:05,840 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:22:05,872 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:22:06,285 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:22:06,470 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:22:06,479 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:22:06,480 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:22:06,480 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:22:06,484 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:22:07,058 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:22:07,146 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:22:08,579 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:22:08,988 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-09 14:22:33,928 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:22:33,935 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:22:33,975 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:22:34,350 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:22:34,562 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:22:34,570 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:22:34,570 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:22:34,571 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:22:34,578 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:22:35,290 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:22:35,381 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:22:37,237 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:23:10,102 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:23:10,109 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:23:10,135 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:23:10,498 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:23:10,717 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:23:10,725 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:23:10,726 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:23:10,726 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:23:10,730 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:23:11,254 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:23:11,355 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:23:13,181 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:23:26,505 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:23:26,513 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:23:26,559 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:23:26,998 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:23:27,474 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:23:27,481 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:23:27,482 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:23:27,482 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:23:27,488 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:23:28,518 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:23:28,579 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:23:30,131 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@316a598d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:25:41,257 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:25:41,263 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:25:41,298 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:25:41,699 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:25:41,866 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:25:41,873 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:25:41,874 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:25:41,875 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:25:41,883 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:25:42,459 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:25:42,590 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:25:44,513 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:26:01,788 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:26:01,795 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:26:01,823 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:26:02,263 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:26:02,438 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:26:02,444 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:26:02,444 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:26:02,445 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:26:02,450 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:26:03,097 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:26:03,184 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:26:04,652 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:26:05,021 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-09 14:28:12,717 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:28:12,724 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:28:12,747 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:28:13,111 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:28:13,274 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:28:13,282 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:28:13,283 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:28:13,283 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:28:13,288 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:28:13,890 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:28:13,982 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:28:15,855 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eb6749b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:28:16,424 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-09 14:29:49,165 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:29:49,181 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:29:49,222 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:29:49,684 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:29:49,926 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:29:49,938 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:29:49,939 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:29:49,941 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:29:49,949 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:29:51,173 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:29:51,304 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:29:52,552 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eb6749b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:29:53,174 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-09 14:35:38,798 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:35:38,806 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:35:38,835 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:35:39,214 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:35:39,426 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:35:39,433 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:35:39,434 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:35:39,435 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:35:39,440 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:35:40,088 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:35:40,173 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:35:41,805 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:36:05,416 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:36:05,423 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:36:05,469 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:36:05,921 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:36:06,202 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:36:06,211 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:36:06,213 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:36:06,214 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:36:06,228 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:36:07,280 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:36:07,404 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:36:09,282 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14d8444b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:37:30,305 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:37:30,313 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:37:30,345 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:37:30,736 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:37:30,949 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:37:30,955 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:37:30,956 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:37:30,956 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:37:30,960 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:37:31,567 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:37:31,653 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:37:33,105 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:37:49,129 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:37:49,136 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:37:49,174 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:37:49,677 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:37:49,886 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:37:49,909 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:37:49,910 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:37:49,912 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:37:49,920 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:37:51,043 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:37:51,142 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:37:52,497 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:50:20,798 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:50:20,804 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:50:20,835 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:50:21,214 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:50:21,378 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:50:21,391 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:50:21,392 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:50:21,393 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:50:21,401 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:50:21,958 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:50:22,025 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:50:23,954 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:54:20,118 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:54:20,124 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:54:20,152 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:54:20,525 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:54:20,705 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:54:20,711 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:54:20,713 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:54:20,713 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:54:20,718 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:54:21,355 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:54:21,452 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:54:23,012 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:54:23,448 +0300 [main] ERROR (AbstractDao.java:83) - Error was thrown in DAO: java.lang.IllegalArgumentException: Unknown entity: java.lang.Integer
+2017-05-09 14:54:52,599 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:54:52,605 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:54:52,634 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:54:52,985 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:54:53,150 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:54:53,158 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:54:53,159 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:54:53,159 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:54:53,165 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:54:53,668 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:54:53,741 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:54:55,601 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:54:56,043 +0300 [main] ERROR (AbstractDao.java:34) - Error was thrown in DAO: org.hibernate.HibernateException: could not reassociate uninitialized transient collection
+2017-05-09 14:54:56,045 +0300 [main] ERROR (AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)
+2017-05-09 14:54:56,046 +0300 [main] ERROR (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)]
+2017-05-09 14:55:08,136 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:55:08,146 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:55:08,183 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:55:08,618 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:55:09,056 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:55:09,062 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:55:09,063 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:55:09,063 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:55:09,072 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:55:09,767 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:55:09,881 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:55:11,528 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2eadc9f6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:55:12,536 +0300 [main] ERROR (AbstractDao.java:83) - Error was thrown in DAO: java.lang.IllegalArgumentException: attempt to create delete event with null entity
+2017-05-09 14:55:29,585 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:55:29,596 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:55:29,629 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:55:30,027 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:55:30,229 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:55:30,237 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:55:30,238 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:55:30,239 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:55:30,243 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:55:31,088 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:55:31,164 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:55:32,505 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:55:32,947 +0300 [main] ERROR (AbstractDao.java:34) - Error was thrown in DAO: org.hibernate.HibernateException: could not reassociate uninitialized transient collection
+2017-05-09 14:55:32,949 +0300 [main] ERROR (AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)
+2017-05-09 14:55:32,951 +0300 [main] ERROR (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)]
+2017-05-09 14:56:03,510 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 14:56:03,519 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 14:56:03,556 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 14:56:04,023 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 14:56:04,267 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 14:56:04,273 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 14:56:04,274 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 14:56:04,274 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 14:56:04,280 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 14:56:05,155 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 14:56:05,237 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 14:56:06,792 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14d8444b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 14:56:47,974 +0300 [main] ERROR (AbstractDao.java:34) - Error was thrown in DAO: org.hibernate.HibernateException: could not reassociate uninitialized transient collection
+2017-05-09 14:56:50,343 +0300 [main] ERROR (AssertionFailure.java:31) - HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)
+2017-05-09 14:56:50,344 +0300 [main] ERROR (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [null id in by.nc.training.dev3.coffee.entities.Beverage entry (don't flush the Session afterQuery an exception occurs)]
+2017-05-09 18:20:20,387 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 18:20:20,392 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 18:20:20,425 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 18:20:20,715 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 18:20:20,835 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 18:20:20,841 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 18:20:20,842 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 18:20:20,842 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 18:20:20,846 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 18:20:21,328 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 18:20:21,378 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 18:20:22,344 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eb6749b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-09 18:20:22,559 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-09 18:20:22,585 +0300 [main] ERROR (AbstractDao.java:84) - Error was thrown in DAO: java.lang.IllegalArgumentException: attempt to create delete event with null entity
+2017-05-09 18:22:23,007 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-09 18:22:23,013 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-09 18:22:23,037 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-09 18:22:23,278 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-09 18:22:23,423 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-09 18:22:23,429 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-09 18:22:23,429 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-09 18:22:23,430 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-09 18:22:23,433 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-09 18:22:24,098 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-09 18:22:24,148 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-09 18:22:25,071 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:31:12,042 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:31:12,072 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:31:12,142 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:31:12,672 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:31:12,872 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:31:12,872 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:31:12,882 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:31:12,882 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:31:12,882 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:31:13,132 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:31:13,172 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:31:14,122 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:31:28,376 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:31:28,381 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:31:28,400 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:31:28,642 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:31:28,764 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:31:28,764 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:31:28,764 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:31:28,764 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:31:28,774 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:31:29,253 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:31:29,296 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:31:30,160 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:32:21,169 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:32:21,176 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:32:21,217 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:32:21,511 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:32:21,611 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:32:21,621 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:32:21,621 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:32:21,621 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:32:21,621 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:32:21,881 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:32:21,921 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:32:22,813 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@14d8444b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:34:14,518 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:34:14,528 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:34:14,548 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:34:14,772 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:34:14,882 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:34:14,892 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:34:14,892 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:34:14,892 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:34:14,892 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:34:15,395 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:34:15,472 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:34:16,324 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:34:31,938 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:34:31,938 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:34:31,961 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:34:32,192 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:34:32,302 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:34:32,302 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:34:32,302 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:34:32,302 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:34:32,312 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:34:32,869 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:34:32,929 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:34:33,886 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:36:35,664 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:36:35,674 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:36:35,699 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:36:35,918 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:36:36,028 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:36:36,028 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:36:36,028 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:36:36,028 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:36:36,038 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:36:36,541 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:36:36,611 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:36:37,586 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:36:56,887 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:36:56,887 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:36:56,917 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:36:57,151 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:36:57,271 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:36:57,271 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:36:57,271 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:36:57,271 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:36:57,281 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:36:57,885 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:36:57,976 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:36:58,849 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:38:47,225 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:38:47,225 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:38:47,257 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:38:47,487 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:38:47,597 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:38:47,607 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:38:47,607 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:38:47,607 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:38:47,607 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:38:48,131 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:38:48,223 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:38:49,009 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:41:06,894 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:41:06,904 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:41:06,924 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:41:07,164 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:41:07,294 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:41:07,304 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:41:07,304 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:41:07,304 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:41:07,304 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:41:07,782 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:41:07,847 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:41:08,790 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:41:30,712 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:41:30,722 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:41:30,752 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:41:30,994 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:41:31,104 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:41:31,114 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:41:31,124 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:41:31,124 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:41:31,124 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:41:31,588 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:41:31,659 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:41:32,680 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:44:54,727 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:44:54,737 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:44:54,763 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:44:54,981 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:44:55,091 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:44:55,101 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:44:55,101 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:44:55,101 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:44:55,101 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:44:55,569 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:44:55,647 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:44:56,473 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:44:56,653 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-11 07:44:56,753 +0300 [main] ERROR (AbstractDao.java:72) - Error was thrown in DAO: org.hibernate.HibernateException: identifier of an instance of by.nc.training.dev3.coffee.entities.Beverage was altered from 13 to 14
+2017-05-11 07:44:56,753 +0300 [main] ERROR (ExceptionMapperStandardImpl.java:39) - HHH000346: Error during managed flush [org.hibernate.HibernateException: identifier of an instance of by.nc.training.dev3.coffee.entities.Beverage was altered from 13 to 14]
+2017-05-11 07:45:33,471 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:45:33,481 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:45:33,491 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:45:33,731 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:45:33,841 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:45:33,851 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:45:33,851 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:45:33,851 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:45:33,851 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:45:34,402 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:45:34,502 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:45:35,285 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:45:35,545 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-11 07:46:00,543 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 07:46:00,553 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 07:46:00,573 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 07:46:00,805 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 07:46:00,905 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 07:46:00,905 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 07:46:00,915 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 07:46:00,915 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 07:46:00,915 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 07:46:01,347 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 07:46:01,463 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 07:46:02,373 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eb6749b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 07:46:02,633 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-11 10:55:07,321 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 10:55:07,399 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 10:55:07,508 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 10:55:08,007 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 10:55:08,147 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 10:55:08,147 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 10:55:08,147 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 10:55:08,147 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 10:55:08,147 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 10:55:08,428 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 10:55:08,475 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 10:55:09,380 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1eb6749b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-11 10:55:09,739 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-11 10:58:14,769 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-11 10:58:14,769 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-11 10:58:14,800 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-11 10:58:15,034 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-11 10:58:15,128 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-11 10:58:15,143 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernate]
+2017-05-11 10:58:15,143 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-11 10:58:15,143 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-11 10:58:15,143 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-11 10:58:15,642 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-11 10:58:15,720 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-11 10:58:16,656 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1e1d3956] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.

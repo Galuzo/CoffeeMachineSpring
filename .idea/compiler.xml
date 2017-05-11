@@ -13,7 +13,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CoffeeMachineSpring" target="1.5" />
+      <module name="coffee" target="1.5" />
       <module name="dao" target="1.5" />
       <module name="entities" target="1.5" />
       <module name="services" target="1.5" />
