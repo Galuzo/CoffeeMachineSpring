@@ -4,12 +4,16 @@ import by.nc.training.dev3.coffee.dao.impl.BeverageDaoImpl;
 import by.nc.training.dev3.coffee.dao.impl.BillDaoImpl;
 import by.nc.training.dev3.coffee.dao.impl.IngredientDaoImpl;
 import by.nc.training.dev3.coffee.dao.impl.OrderDaoImpl;
+import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
+import by.nc.training.dev3.coffee.dao.interfaces.IBillDao;
+import by.nc.training.dev3.coffee.dao.interfaces.IIngredientDao;
+import by.nc.training.dev3.coffee.dao.interfaces.IOrderDao;
 import by.nc.training.dev3.coffee.entities.*;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
+import by.nc.training.dev3.coffee.interfaces.ClientService;
 import by.nc.training.dev3.coffee.utils.HibernateUtil;
 import by.nc.training.dev3.coffee.utils.Tools;
-import net.sf.ehcache.search.expression.Or;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -20,15 +24,15 @@ import java.util.Set;
 /**
  * Created by Win on 07.05.2017.
  */
-public class ClientService{
+public class ClientServiceImpl implements ClientService {
     private static ClientService instance;
-    private static Logger logger = Logger.getLogger(ClientService.class);
+    private static Logger logger = Logger.getLogger(ClientServiceImpl.class);
     private static  String message;
 
-    private ClientService(){}
+    private ClientServiceImpl(){}
     public static synchronized ClientService getInstance(){
         if(instance == null){
-            instance = new ClientService();
+            instance = new ClientServiceImpl();
         }
         return instance;
     }
@@ -36,13 +40,13 @@ public class ClientService{
     public int addBeverageInBill(User user, int idBeverage) throws ServiceException{
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
-        BeverageDaoImpl beverageDao = BeverageDaoImpl.getInstance();
-        BillDaoImpl billDao = BillDaoImpl.getInstance();
-        OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
-        Bill bill = null;
-        Order order=null;
+        IBeverageDao beverageDao = BeverageDaoImpl.getInstance();
+        IBillDao billDao = BillDaoImpl.getInstance();
+        IOrderDao orderDao = OrderDaoImpl.getInstance();
+        Bill bill;
+        Order order;
         int returnId;
-        Beverage beverageInMachine=null;
+        Beverage beverageInMachine;
         try {
             beverageInMachine = beverageDao.getById(idBeverage);
             if (beverageInMachine.getCount() > 0) {
@@ -56,15 +60,17 @@ public class ClientService{
                 transaction.commit();
             } else {
                 transaction.rollback();
-                throw new ServiceException("The beverage count is less then 0");
+                message="The beverage count is less then 0";
+                throw new ServiceException(message);
             }
         } catch (DaoException e) {
+            logger.error(e);
             throw new ServiceException(e);
         }
         return returnId;
     }
 
-    public void addIngredient(User user,int idOrder, int idIngredient) throws ServiceException {
+    public void addIngredient(User user, int idOrder, int idIngredient) throws ServiceException {
         OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
         IngredientDaoImpl ingredientDao = IngredientDaoImpl.getInstance();
         Session session = HibernateUtil.getInstance().getSession();
@@ -84,25 +90,27 @@ public class ClientService{
                 }
                 else
                 {
-                    throw new ServiceException("The bill doesn`t match");
+                    message="The bill doesn`t match";
+                    throw new ServiceException(message);
                 }
             }
             else
             {
-                throw new ServiceException("The ingredient count is less then 0");
+                message="The ingredient count is less then 0";
+                throw new ServiceException(message);
             }
         } catch (DaoException e) {
+            logger.error(e);
             transaction.rollback();
             throw new ServiceException(e);
-
         }
     }
 
-    public void removeBeverageFromBill(User user,int idOrder) throws ServiceException
+    public void removeBeverageFromBill(User user, int idOrder) throws ServiceException
     {
-        IngredientDaoImpl ingredientDao = IngredientDaoImpl.getInstance();
-        BeverageDaoImpl beverageDao = BeverageDaoImpl.getInstance();
-        OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
+        IIngredientDao ingredientDao = IngredientDaoImpl.getInstance();
+        IBeverageDao beverageDao = BeverageDaoImpl.getInstance();
+        IOrderDao orderDao = OrderDaoImpl.getInstance();
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         try {
@@ -121,20 +129,22 @@ public class ClientService{
                 transaction.commit();
             }
             else {
-                throw new ServiceException("The bill doesn`t match");
+                message="The bill doesn`t match";
+                throw new ServiceException(message);
             }
         } catch (DaoException e) {
+            logger.error(e);
             transaction.rollback();
             throw new ServiceException(e);
         }
     }
 
-    public void removeIngredient(User user,int idOrder,int idIngredient) throws ServiceException
+    public void removeIngredient(User user, int idOrder, int idIngredient) throws ServiceException
     {
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction=session.beginTransaction();
-        IngredientDaoImpl ingredientDao = IngredientDaoImpl.getInstance();
-        OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
+        IIngredientDao ingredientDao = IngredientDaoImpl.getInstance();
+        IOrderDao orderDao = OrderDaoImpl.getInstance();
         try {
             Order order = orderDao.getById(idOrder);
             Ingredient deletedIngredient = ingredientDao.getById(idIngredient);
@@ -152,9 +162,11 @@ public class ClientService{
                 transaction.commit();
             }
             else {
-                throw new ServiceException("The bill doesn`t match");
+                message="The bill doesn`t match";
+                throw new ServiceException(message);
             }
         } catch (DaoException e) {
+            logger.error(e);
             transaction.rollback();
             throw new ServiceException(e);
         }
@@ -163,16 +175,17 @@ public class ClientService{
 
     public void  payBill(User user) throws ServiceException {
         Transaction transaction = HibernateUtil.getInstance().getSession().beginTransaction();
-        BillDaoImpl billDao = BillDaoImpl.getInstance();
+        IBillDao billDao = BillDaoImpl.getInstance();
         try {
             Bill bill=billDao.getByUser(user);
-            OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
+            IOrderDao orderDao = OrderDaoImpl.getInstance();
             List<Order> orders=orderDao.getByBill(bill);
             for (Order order : orders) {
                orderDao.delete(order);
             }
             transaction.commit();
         } catch (DaoException e) {
+            logger.error(e);
             transaction.rollback();
             throw new ServiceException(e);
         }

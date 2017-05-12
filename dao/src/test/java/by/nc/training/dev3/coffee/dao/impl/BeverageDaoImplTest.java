@@ -22,6 +22,9 @@ public class BeverageDaoImplTest {
     private AbstractDao dao;
     private Transaction transaction;
     private  Session session;
+    private final String TITLE = "latte";
+    private final double COST=1.3;
+    private final int COUNT=5;
 
     @BeforeClass
     public static void  initTest(){}
@@ -51,12 +54,13 @@ public class BeverageDaoImplTest {
 
     @Test
     public void updateShouldChangeObject() throws Exception{
+        String updatedTitle = "updated";
         Beverage beverage = createNewBeverage();
         int result=(Integer) dao.save(beverage);
         beverage.setId(result);
 
         Beverage expectedBeverage = (Beverage)dao.getById(result);
-        expectedBeverage.setTitle("updated");
+        expectedBeverage.setTitle(updatedTitle);
         dao.update(expectedBeverage);
         Beverage realResult=(Beverage)dao.getById(result);
         dao.delete(beverage);
@@ -87,7 +91,7 @@ public class BeverageDaoImplTest {
     @Test()
     public void getByIdShouldReturnNull() throws Exception
     {
-        final int idBeverage=40;
+        int idBeverage=40;
         Beverage result=(Beverage)dao.getById(idBeverage);
         assertNull(result);
     }
@@ -114,9 +118,9 @@ public class BeverageDaoImplTest {
 
     private Beverage createNewBeverage() {
         Beverage beverage = new Beverage();
-        beverage.setTitle("latte");
-        beverage.setCount(11);
-        beverage.setCost(3.2);
+        beverage.setTitle(TITLE);
+        beverage.setCount(COUNT);
+        beverage.setCost(COST);
         return beverage;
 
     }

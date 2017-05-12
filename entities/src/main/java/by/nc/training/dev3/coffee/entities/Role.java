@@ -12,20 +12,9 @@ import javax.persistence.Entity;
  */
 @Entity
 @Table(name="roles")
-public class Role{
+public class Role extends AbstractEntity{
 
     public Role(){}
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="role_id")
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    private int id;
 
     @Column(name="title")
     public String getTitle() {

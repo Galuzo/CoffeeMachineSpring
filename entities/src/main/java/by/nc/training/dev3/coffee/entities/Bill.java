@@ -9,20 +9,8 @@ import java.util.*;
  */
 @Entity
 @Table(name="bills")
-public class Bill {
+public class Bill extends AbstractEntity{
     public Bill(){}
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="bill_id")
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    private int id;
-
 
     @Column(name ="generalCost")
     public double getGeneralCost() {

@@ -10,5 +10,5 @@ import java.util.List;
  * Created by Win on 07.05.2017.
  */
 public interface IOrderDao extends IDao<Order> {
-    public List<Order> getByBill(Bill bill)throws DaoException;
+    List<Order> getByBill(Bill bill)throws DaoException;
 }

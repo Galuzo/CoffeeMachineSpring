@@ -8,18 +8,10 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name="users")
-public class User{
+public class User extends AbstractEntity{
 
     public User(){}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="user_id")
-    public int getId() {return id;}
-    public void setId(int id) {
-        this.id = id;
-    }
-    private int id;
 
     @Column(name="login")
     public String getLogin() {

@@ -10,19 +10,9 @@ import java.util.Set;
  */
 @Entity
 @Table(name="beverages")
-public class Beverage {
+public class Beverage extends AbstractEntity {
     public Beverage(){}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="beverage_id")
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    private int id;
 
     @Column(name="title")
     public String getTitle() {

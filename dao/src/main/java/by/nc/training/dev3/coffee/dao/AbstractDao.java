@@ -22,6 +22,7 @@ public class AbstractDao <T > implements IDao<T> {
     protected AbstractDao(Class persistentClass){
         this.persistentClass = persistentClass;
     }
+    private String errorMessage="Error was thrown in DAO: ";
 
     public Serializable save(T entity) throws DaoException {
         Serializable id;
@@ -31,58 +32,58 @@ public class AbstractDao <T > implements IDao<T> {
             id = session.getIdentifier(entity);
         }
         catch(HibernateException e) {
-            logger.error("Error was thrown in DAO: " + e);
-            throw new DaoException();
+            logger.error( errorMessage+ e);
+            throw new DaoException(errorMessage,e);
         }
         return id;
     }
 
     public void update(T entity) throws DaoException {
-        Session session = null;
+        Session session;
         try {
             session = util.getSession();
             session.update(entity);
 
         } catch (Exception e) {
-            logger.error("Error was thrown in DAO: " + e);
-            throw new DaoException();
+            logger.error(errorMessage + e);
+            throw new DaoException(errorMessage,e);
         }
     }
 
     public T getById(int entityId) throws DaoException {
-        Session session = null;
-        T entity = null;
+        Session session;
+        T entity ;
         try {
             session = util.getSession();
             entity = (T)session.get(persistentClass, entityId);
         } catch (Exception e) {
-            logger.error("Error was thrown in DAO: " + e);
-            throw new DaoException();
+            logger.error(errorMessage + e);
+            throw new DaoException(errorMessage,e);
         }
         return entity;
     }
 
     public List<T> getAll() throws DaoException {
-        Session session = null;
-        List entities = new ArrayList<T>();
+        Session session;
+        List entities;
         try {
             session = util.getSession();
             entities = session.createCriteria(persistentClass).list();
         } catch (Exception e) {
-            logger.error("Error was thrown in DAO: " + e);
-            throw new DaoException();
+            logger.error(errorMessage + e);
+            throw new DaoException(errorMessage,e);
         }
         return entities;
     }
 
     public void delete(T entity) throws DaoException {
-        Session session = null;
+        Session session;
         try {
             session = util.getSession();
             session.delete(entity);
         } catch (Exception e) {
-            logger.error("Error was thrown in DAO: " + e);
-            throw new DaoException();
+            logger.error(errorMessage + e);
+            throw new DaoException(errorMessage,e);
         }
     }
 }

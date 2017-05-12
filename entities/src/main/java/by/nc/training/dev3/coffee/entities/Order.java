@@ -11,20 +11,9 @@ import java.util.Set;
  */
 @Entity
 @Table(name="orders")
-public class Order {
+public class Order extends AbstractEntity {
 
     public Order(){}
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="order_id")
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    private int id;
 
     @ManyToOne
     @JoinColumn(name="bill_id")

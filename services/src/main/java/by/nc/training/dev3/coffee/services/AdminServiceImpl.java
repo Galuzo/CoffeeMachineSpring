@@ -3,40 +3,38 @@ package by.nc.training.dev3.coffee.services;
 import by.nc.training.dev3.coffee.dao.AbstractDao;
 import by.nc.training.dev3.coffee.dao.impl.BeverageDaoImpl;
 import by.nc.training.dev3.coffee.dao.impl.IngredientDaoImpl;
-import by.nc.training.dev3.coffee.dao.impl.RoleDaoImpl;
-import by.nc.training.dev3.coffee.dao.impl.UserDaoImpl;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
-import by.nc.training.dev3.coffee.entities.Role;
 import by.nc.training.dev3.coffee.enums.ContentType;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
+import by.nc.training.dev3.coffee.interfaces.AdminService;
 import by.nc.training.dev3.coffee.utils.HibernateUtil;
 import by.nc.training.dev3.coffee.utils.Tools;
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
+import org.apache.log4j.Logger;
 import org.hibernate.Transaction;
 
 /**
  * Created by Win on 06.05.2017.
  */
-public class AdminService {
+public class AdminServiceImpl implements AdminService {
     private static AdminService instance;
-    private static Logger logger = Logger.getLogger(AdminService.class);
+    private static Logger logger = Logger.getLogger(AdminServiceImpl.class);
     private static  String message;
 
-    private AdminService(){}
+    private AdminServiceImpl(){}
     public static synchronized AdminService getInstance(){
         if(instance == null){
-            instance = new AdminService();
+            instance = new AdminServiceImpl();
         }
         return instance;
     }
 
-    public int addExistContentInMachine(ContentType contentType,int id, int count) throws ServiceException
+    public int addExistContentInMachine(ContentType contentType, int id, int count) throws ServiceException
     {
         int newValue=0;
-        AbstractDao dao=null;
+        AbstractDao dao;
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction=session.beginTransaction();
         try {
@@ -66,11 +64,9 @@ public class AdminService {
         return newValue;
     }
 
-    public int addNewContentInMachine(ContentType contentType,String title,double cost,int count) throws ServiceException {
+    public int addNewContentInMachine(ContentType contentType, String title, double cost, int count) throws ServiceException {
         int id=0;
-        AbstractDao dao=null;
-        UserDaoImpl userDao = UserDaoImpl.getInstance();
-        RoleDaoImpl roleDao = RoleDaoImpl.getInstance();
+        AbstractDao dao;
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
         try {
@@ -101,9 +97,9 @@ public class AdminService {
         return id;
     }
 
-    public boolean removeContentFromMachine(ContentType contentType,int id) throws ServiceException{
-        boolean isSuccess=false;
-        AbstractDao dao=null;
+    public boolean removeContentFromMachine(ContentType contentType, int id) throws ServiceException{
+        boolean isSuccess;
+        AbstractDao dao;
 
         Session session = HibernateUtil.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
