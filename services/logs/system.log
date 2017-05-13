@@ -1619,3 +1619,33 @@
 2017-05-12 12:55:44,994 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-05-12 12:55:45,080 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
 2017-05-12 12:55:45,965 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3d484181] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-12 14:24:02,959 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-12 14:24:02,959 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-12 14:24:02,969 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-12 14:24:03,152 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-12 14:24:03,222 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-12 14:24:03,222 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernateSpring]
+2017-05-12 14:24:03,222 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-12 14:24:03,222 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-12 14:24:03,232 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-12 14:24:03,452 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-12 14:24:03,482 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-12 14:24:04,195 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2364305a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-12 14:24:04,455 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-12 14:24:04,495 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-12 14:24:04,495 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-12 14:33:51,925 +0300 [main] INFO  (Version.java:45) - HHH000412: Hibernate Core {5.2.10.Final}
+2017-05-12 14:33:51,935 +0300 [main] INFO  (Environment.java:213) - HHH000206: hibernate.properties not found
+2017-05-12 14:33:51,945 +0300 [main] WARN  (LocalXmlResourceResolver.java:91) - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2017-05-12 14:33:52,141 +0300 [main] INFO  (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-12 14:33:52,211 +0300 [main] WARN  (DriverManagerConnectionProviderImpl.java:70) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-05-12 14:33:52,221 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:126) - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/hibernateSpring]
+2017-05-12 14:33:52,221 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:135) - HHH10001001: Connection properties: {user=root, password=****}
+2017-05-12 14:33:52,221 +0300 [main] INFO  (DriverManagerConnectionProviderImpl.java:140) - HHH10001003: Autocommit mode: false
+2017-05-12 14:33:52,221 +0300 [main] INFO  (PooledConnections.java:41) - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-05-12 14:33:52,431 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-12 14:33:52,461 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-05-12 14:33:53,196 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2364305a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-12 14:33:53,466 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-12 14:33:53,506 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-05-12 14:33:53,506 +0300 [main] WARN  (SessionImpl.java:1811) - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead

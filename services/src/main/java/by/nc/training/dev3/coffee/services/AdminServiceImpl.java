@@ -23,6 +23,7 @@ public class AdminServiceImpl implements AdminService {
     private static Logger logger = Logger.getLogger(AdminServiceImpl.class);
     private static  String message;
 
+
     private AdminServiceImpl(){}
     public static synchronized AdminService getInstance(){
         if(instance == null){
