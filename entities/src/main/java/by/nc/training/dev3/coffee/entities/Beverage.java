@@ -10,36 +10,8 @@ import java.util.Set;
  */
 @Entity
 @Table(name="beverages")
-public class Beverage extends AbstractEntity {
+public class Beverage extends Content {
     public Beverage(){}
-
-
-    @Column(name="title")
-    public String getTitle() {
-        return title;
-    }
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    private String title;
-
-    @Column(name="cost")
-    public double getCost() {
-        return cost;
-    }
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-    private double cost;
-
-    @Column(name="count")
-    public int getCount() {
-        return count;
-    }
-    public void setCount(int count) {
-        this.count = count;
-    }
-    private int count;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "beverage")
     public Set<Order> getOrderSet() {

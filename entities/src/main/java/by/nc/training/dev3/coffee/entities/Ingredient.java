@@ -9,37 +9,9 @@ import java.util.Set;
  */
 @Entity
 @Table(name="ingredients")
-public class Ingredient extends AbstractEntity{
+public class Ingredient extends Content{
 
     public Ingredient(){}
-
-
-    @Column(name="title")
-    public String getTitle() {
-        return title;
-    }
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    private String title;
-
-    @Column(name="cost")
-    public double getCost() {
-        return cost;
-    }
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
-    private double cost;
-
-    @Column(name="count")
-    public int getCount() {
-        return count;
-    }
-    public void setCount(int count) {
-        this.count = count;
-    }
-    private int count;
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "ingredientSet", cascade = CascadeType.ALL)
     public Set<Order> getOrderSet() {
