@@ -10,6 +10,11 @@ import by.nc.training.dev3.coffee.interfaces.ClientService;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
@@ -18,23 +23,22 @@ import static org.junit.Assert.*;
 /**
  * Created by Win on 09.05.2017.
  */
+@RunWith(SpringRunner.class)
+@ContextConfiguration("/test-services-context.xml")
+@ComponentScan
 public class ClientServiceImplTest {
-    private static ClientService clientService;
+    @Autowired
+    private  ClientService clientService;
     private  User user;
-    private static IUserDao userDao;
-    private static IIngredientDao ingredientDao;
-    private static IBeverageDao beverageDao;
-    private static IOrderDao orderDao;
+    @Autowired
+    private  IUserDao userDao;
+    @Autowired
+    private  IIngredientDao ingredientDao;
 
-
-    @BeforeClass
-    public static void init(){
-        clientService = ClientServiceImpl.getInstance();
-        userDao = UserDaoImpl.getInstance();
-        ingredientDao = IngredientDaoImpl.getInstance();
-        beverageDao = BeverageDaoImpl.getInstance();
-        orderDao = OrderDaoImpl.getInstance();
-    }
+    @Autowired
+    private  IOrderDao orderDao;
+    @Autowired
+    private IBillDao billDao;
 
     @Before
     public void setUp() throws Exception
@@ -44,11 +48,9 @@ public class ClientServiceImplTest {
     }
 
 
-
-
     @Test
     public void addBeverageInBill() throws Exception {
-        int idBeverage=2;
+        int idBeverage=33;
         int result= clientService.addBeverageInBill(user, idBeverage);
         Order order=orderDao.getById(result);
         clientService.removeBeverageFromBill(user,result);
@@ -84,7 +86,6 @@ public class ClientServiceImplTest {
     public void payBill() throws Exception
     {
         clientService.payBill(user);
-        IBillDao billDao = BillDaoImpl.getInstance();
         Bill bill=billDao.getByUser(user);
         List<Order> orderList = orderDao.getByBill(bill);
         boolean result=orderList.isEmpty();

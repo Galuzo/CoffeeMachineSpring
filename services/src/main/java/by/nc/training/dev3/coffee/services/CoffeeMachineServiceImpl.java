@@ -10,6 +10,8 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.CoffeeMachineService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
@@ -17,22 +19,20 @@ import java.util.List;
 /**
  * Created by Win on 07.05.2017.
  */
+@Service
 public class CoffeeMachineServiceImpl implements CoffeeMachineService {
 
-    private static CoffeeMachineService instance;
     private static Logger logger = Logger.getLogger(CoffeeMachineServiceImpl.class);
     private static  String message;
+    @Autowired
+    private IBeverageDao beverageDao;
+    @Autowired
+    private IIngredientDao ingredientDao;
 
     private CoffeeMachineServiceImpl(){}
-    public static synchronized CoffeeMachineService getInstance(){
-        if(instance == null){
-            instance = new CoffeeMachineServiceImpl();
-        }
-        return instance;
-    }
+
 
     public List<Beverage> showBeverageInMachine()throws ServiceException {
-        IBeverageDao beverageDao = BeverageDaoImpl.getInstance();
         List<Beverage> beverages;
         try {
             beverages=beverageDao.getAll();
@@ -45,7 +45,6 @@ public class CoffeeMachineServiceImpl implements CoffeeMachineService {
     }
 
     public List<Ingredient> showIngredientsInMachine()throws ServiceException {
-        IIngredientDao ingredientDao = IngredientDaoImpl.getInstance();
         List<Ingredient> ingredients;
         try {
             ingredients=ingredientDao.getAll();

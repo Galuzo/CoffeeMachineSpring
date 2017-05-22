@@ -5,20 +5,18 @@ import by.nc.training.dev3.coffee.dao.interfaces.IRoleDao;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Role;
 import org.apache.log4j.Logger;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Win on 05.05.2017.
  */
+@Repository
 public class RoleDaoImpl extends AbstractDao<Role> implements IRoleDao {
-    private static RoleDaoImpl instance;
+    @Autowired
+    protected RoleDaoImpl(SessionFactory sessionFactory) {
+        super(Role.class,sessionFactory);
+    }
 
-    protected RoleDaoImpl() {
-        super(Role.class);
-    }
-    public static synchronized RoleDaoImpl getInstance(){
-        if(instance == null){
-            instance = new RoleDaoImpl();
-        }
-        return instance;
-    }
 }

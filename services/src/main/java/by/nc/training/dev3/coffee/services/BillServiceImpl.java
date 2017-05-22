@@ -12,31 +12,30 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.BillService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 /**
  * Created by Win on 09.05.2017.
  */
+@Service
 public class BillServiceImpl implements BillService {
-    private static BillService instance;
     private static Logger logger = Logger.getLogger(ClientServiceImpl.class);
     private static  String message;
 
+    @Autowired
+    private IBillDao billDao;
+    @Autowired
+    private IOrderDao orderDao;
+
     private BillServiceImpl(){}
-    public static synchronized BillService getInstance(){
-        if(instance == null){
-            instance = new BillServiceImpl();
-        }
-        return instance;
-    }
 
     public void showBill(User user) throws ServiceException
     {
-        IBillDao billDao = BillDaoImpl.getInstance();
         try {
             Bill bill=billDao.getById(user.getBill().getId());
-            IOrderDao orderDao = OrderDaoImpl.getInstance();
             List<Order> list=orderDao.getByBill(bill);
             for (Order order : list) {
                 System.out.println(order.getBeverage());

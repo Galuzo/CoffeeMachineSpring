@@ -6,22 +6,30 @@ import by.nc.training.dev3.coffee.enums.ContentType;
 import by.nc.training.dev3.coffee.interfaces.AdminService;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
 
 /**
  * Created by Win on 06.05.2017.
  */
+@RunWith(SpringRunner.class)
+@ContextConfiguration("/test-services-context.xml")
+@ComponentScan
 public class AdminServiceImplTest {
-    private static AdminService adminService;
     private final String TITLE = "coffee";
     private final double COST=1.3;
 
-    @BeforeClass
-    public static void init() {
-         adminService = AdminServiceImpl.getInstance();
+    @Autowired
+    private  AdminService adminService;
 
-    }
+    @Autowired
+    private IBeverageDao beverageDao;
+
 
     @Test
     public void addExistIngredientShouldReturnCount() throws Exception {
@@ -67,8 +75,7 @@ public class AdminServiceImplTest {
         int countNewBeverage=5;
         int id= adminService.addNewContentInMachine(ContentType.BEVERAGE, TITLE, COST, countNewBeverage);
         adminService.removeContentFromMachine(ContentType.BEVERAGE, id);
-        IBeverageDao dao = BeverageDaoImpl.getInstance();
-        assertNull(dao.getById(id));
+        assertNull(beverageDao.getById(id));
     }
 
 }

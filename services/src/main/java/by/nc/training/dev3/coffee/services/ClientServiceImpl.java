@@ -1,9 +1,6 @@
 package by.nc.training.dev3.coffee.services;
 
 import by.nc.training.dev3.coffee.dao.impl.BeverageDaoImpl;
-import by.nc.training.dev3.coffee.dao.impl.BillDaoImpl;
-import by.nc.training.dev3.coffee.dao.impl.IngredientDaoImpl;
-import by.nc.training.dev3.coffee.dao.impl.OrderDaoImpl;
 import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IBillDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IIngredientDao;
@@ -12,11 +9,13 @@ import by.nc.training.dev3.coffee.entities.*;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.ClientService;
-import by.nc.training.dev3.coffee.utils.HibernateUtil;
 import by.nc.training.dev3.coffee.utils.Tools;
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Set;
@@ -24,25 +23,30 @@ import java.util.Set;
 /**
  * Created by Win on 07.05.2017.
  */
+@Service
 public class ClientServiceImpl implements ClientService {
-    private static ClientService instance;
     private static Logger logger = Logger.getLogger(ClientServiceImpl.class);
     private static  String message;
 
+    @Autowired
+    private IBillDao billDao;
+    @Autowired
+    private IOrderDao orderDao;
+    @Autowired
+    private IBeverageDao beverageDao;
+
+    @Autowired
+    private IIngredientDao ingredientDao;
+
+    @Autowired
+    private SessionFactory sessionFactory;
+
     private ClientServiceImpl(){}
-    public static synchronized ClientService getInstance(){
-        if(instance == null){
-            instance = new ClientServiceImpl();
-        }
-        return instance;
-    }
+
 
     public int addBeverageInBill(User user, int idBeverage) throws ServiceException{
-        Session session = HibernateUtil.getInstance().getSession();
+        Session session = sessionFactory.getCurrentSession();
         Transaction transaction = session.beginTransaction();
-        IBeverageDao beverageDao = BeverageDaoImpl.getInstance();
-        IBillDao billDao = BillDaoImpl.getInstance();
-        IOrderDao orderDao = OrderDaoImpl.getInstance();
         Bill bill;
         Order order;
         int returnId;
@@ -71,11 +75,8 @@ public class ClientServiceImpl implements ClientService {
     }
 
     public void addIngredient(User user, int idOrder, int idIngredient) throws ServiceException {
-        OrderDaoImpl orderDao = OrderDaoImpl.getInstance();
-        IngredientDaoImpl ingredientDao = IngredientDaoImpl.getInstance();
-        Session session = HibernateUtil.getInstance().getSession();
+        Session session = null;
         Transaction transaction = session.beginTransaction();
-
         try {
             Ingredient ingredient=ingredientDao.getById(idIngredient);
             Order order=orderDao.getById(idOrder);
@@ -108,10 +109,7 @@ public class ClientServiceImpl implements ClientService {
 
     public void removeBeverageFromBill(User user, int idOrder) throws ServiceException
     {
-        IIngredientDao ingredientDao = IngredientDaoImpl.getInstance();
-        IBeverageDao beverageDao = BeverageDaoImpl.getInstance();
-        IOrderDao orderDao = OrderDaoImpl.getInstance();
-        Session session = HibernateUtil.getInstance().getSession();
+        Session session = sessionFactory.getCurrentSession();
         Transaction transaction = session.beginTransaction();
         try {
             Order order=orderDao.getById(idOrder);
@@ -141,10 +139,8 @@ public class ClientServiceImpl implements ClientService {
 
     public void removeIngredient(User user, int idOrder, int idIngredient) throws ServiceException
     {
-        Session session = HibernateUtil.getInstance().getSession();
+        Session session = sessionFactory.getCurrentSession();
         Transaction transaction=session.beginTransaction();
-        IIngredientDao ingredientDao = IngredientDaoImpl.getInstance();
-        IOrderDao orderDao = OrderDaoImpl.getInstance();
         try {
             Order order = orderDao.getById(idOrder);
             Ingredient deletedIngredient = ingredientDao.getById(idIngredient);
@@ -174,11 +170,9 @@ public class ClientServiceImpl implements ClientService {
     }
 
     public void  payBill(User user) throws ServiceException {
-        Transaction transaction = HibernateUtil.getInstance().getSession().beginTransaction();
-        IBillDao billDao = BillDaoImpl.getInstance();
+        Transaction transaction = sessionFactory.openSession().beginTransaction();
         try {
             Bill bill=billDao.getByUser(user);
-            IOrderDao orderDao = OrderDaoImpl.getInstance();
             List<Order> orders=orderDao.getByBill(bill);
             for (Order order : orders) {
                orderDao.delete(order);

@@ -7,21 +7,19 @@ import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import org.apache.log4j.Logger;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Win on 05.05.2017.
  */
+@Repository
 public class IngredientDaoImpl extends AbstractDao<Ingredient> implements IIngredientDao {
-    private static IngredientDaoImpl instance;
 
-    protected IngredientDaoImpl() {
-        super(Ingredient.class);
-    }
-    public static synchronized IngredientDaoImpl getInstance(){
-        if(instance == null){
-            instance = new IngredientDaoImpl();
-        }
-        return instance;
+    @Autowired
+    protected IngredientDaoImpl(SessionFactory sessionFactory) {
+        super(Ingredient.class,sessionFactory);
     }
 
 

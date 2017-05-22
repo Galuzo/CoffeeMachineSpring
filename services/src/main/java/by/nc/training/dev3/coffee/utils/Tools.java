@@ -24,15 +24,6 @@ public class Tools {
         return value;
     }
 
-    public static AbstractDao defineContentDao(ContentType contentType) {
-        switch (contentType) {
-            case BEVERAGE:
-                return BeverageDaoImpl.getInstance();
-            case INGREDIENT:
-                return IngredientDaoImpl.getInstance();
-        }
-        return null;
-    }
 
     public static Content defineContent(ContentType contentType) {
         switch (contentType) {
