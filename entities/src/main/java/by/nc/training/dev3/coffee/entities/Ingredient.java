@@ -1,5 +1,7 @@
 package by.nc.training.dev3.coffee.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +15,8 @@ public class Ingredient extends Content{
 
     public Ingredient(){}
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "ingredientSet", cascade = CascadeType.ALL)
+
+    @ManyToMany(fetch = FetchType.EAGER, mappedBy = "ingredientSet")
     public Set<Order> getOrderSet() {
         return orderSet;
     }

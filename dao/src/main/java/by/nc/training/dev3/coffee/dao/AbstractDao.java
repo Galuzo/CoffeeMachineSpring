@@ -8,8 +8,11 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
 import java.io.Serializable;
 import java.util.List;
 
@@ -19,7 +22,7 @@ import java.util.List;
 public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> {
     private static final Logger LOGGER = Logger.getLogger(AbstractDao.class);
 
-    @Autowired
+
     protected SessionFactory sessionFactory;
     private Class persistentClass;
 
@@ -56,28 +59,32 @@ public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> 
             throw new DaoException(errorMessage,e);
         }
     }
+
     @Transactional
     public T getById(int entityId) throws DaoException {
         Session session;
         T entity ;
         try {
-             session = sessionFactory.getCurrentSession();
-            System.out.println(session);
+            session = sessionFactory.getCurrentSession();
             entity = (T)session.get(persistentClass, entityId);
         } catch (Exception e) {
             LOGGER.error(errorMessage + e);
             throw new DaoException(errorMessage,e);
         }
-        System.out.println("success");
         return entity;
     }
+
 
     public List<T> getAll() throws DaoException {
         Session session;
         List entities;
         try {
             session = sessionFactory.getCurrentSession();
-            entities = session.createCriteria(persistentClass).list();
+            CriteriaBuilder builder = session.getCriteriaBuilder();
+            CriteriaQuery<T> criteria = builder.createQuery(persistentClass);
+            criteria.from(persistentClass);
+            entities = session.createQuery(criteria).getResultList();
+
         } catch (Exception e) {
             LOGGER.error(errorMessage + e);
             throw new DaoException(errorMessage,e);

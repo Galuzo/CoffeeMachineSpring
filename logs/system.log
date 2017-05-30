@@ -3728,3 +3728,8 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'hib
 2017-05-07 19:08:58,522 +0300 [main] INFO  (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-05-07 19:08:58,621 +0300 [main] INFO  (LobCreatorBuilderImpl.java:98) - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
 2017-05-07 19:08:59,625 +0300 [main] INFO  (DdlTransactionIsolatorNonJtaImpl.java:47) - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@a202ccb] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-05-30 20:10:22,124 +0300 [http-nio-8080-exec-1] ERROR (AbstractDao.java:89) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-30 20:10:22,184 +0300 [http-nio-8080-exec-1] ERROR (CoffeeMachineServiceImpl.java:50) - nullby.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-30 20:10:55,754 +0300 [http-nio-8080-exec-2] ERROR (AbstractDao.java:89) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-30 20:10:55,754 +0300 [http-nio-8080-exec-2] ERROR (CoffeeMachineServiceImpl.java:50) - The beverages was not foundby.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-30 20:26:15,446 +0300 [http-nio-8080-exec-1] ERROR (OrderDaoImpl.java:46) - Error was thrown in DAO: org.hibernate.QueryException: Named parameter [bill] not set

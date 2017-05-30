@@ -7,5 +7,4 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
  * Created by Win on 04.05.2017.
  */
 public interface IBeverageDao extends IDao<Beverage> {
-     Beverage getByTitle(String title) throws DaoException;
 }

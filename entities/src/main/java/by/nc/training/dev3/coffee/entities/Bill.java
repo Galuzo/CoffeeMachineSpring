@@ -1,5 +1,7 @@
 package by.nc.training.dev3.coffee.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;

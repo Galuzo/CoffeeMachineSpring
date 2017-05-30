@@ -26,19 +26,5 @@ public class BeverageDaoImpl extends AbstractDao<Beverage> implements IBeverageD
     }
 
 
-    public Beverage getByTitle(String title) throws DaoException {
-        Session session;
-        Beverage beverage;
-        try {
-            session = sessionFactory.getCurrentSession();
-            Query query=session.createQuery("from Beverage where title = :title");
-            query.setParameter("title", title);
-             beverage= (Beverage) query.uniqueResult();
 
-        } catch (Exception e) {
-            LOGGER.error("Error was thrown in BeverageDaoIml"+e);
-            throw new DaoException();
-        }
-        return beverage;
-    }
 }

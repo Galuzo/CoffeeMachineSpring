@@ -1,5 +1,6 @@
 package by.nc.training.dev3.coffee.services;
 
+import by.nc.training.dev3.coffee.dto.ContentDto;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.interfaces.CoffeeMachineService;
@@ -22,19 +23,15 @@ public class CoffeeMachineServiceImplTest {
     @Autowired
     private CoffeeMachineService coffeeMachineService;
     @Test
-    public void showBeverageInMachine() throws Exception {
-        List<Beverage> beverageList= coffeeMachineService.showBeverageInMachine();
-        for (Beverage beverage : beverageList) {
-            System.out.println(beverage);
-        }
+    public List<ContentDto> showBeverageInMachine() throws Exception {
+        List<ContentDto> beverageList= coffeeMachineService.showBeverageInMachine();
+       return beverageList;
     }
 
     @Test
-    public void showIngredientsInMachine() throws Exception {
-        List<Ingredient> ingredients= coffeeMachineService.showIngredientsInMachine();
-        for (Ingredient ingredient : ingredients) {
-            System.out.println(ingredient);
-        }
+    public List<ContentDto> showIngredientsInMachine() throws Exception {
+        List<ContentDto> ingredients= coffeeMachineService.showIngredientsInMachine();
+        return ingredients;
     }
 
 }

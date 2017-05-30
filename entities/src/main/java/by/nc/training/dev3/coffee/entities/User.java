@@ -1,5 +1,7 @@
 package by.nc.training.dev3.coffee.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -70,7 +72,6 @@ public class User extends AbstractEntity{
         result = 31 * result + login.hashCode();
         result = 31 * result + password.hashCode();
         result = 31 * result + role.hashCode();
-        result = 31 * result + bill.hashCode();
         return result;
     }
 

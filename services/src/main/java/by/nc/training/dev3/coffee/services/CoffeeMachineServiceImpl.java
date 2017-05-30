@@ -4,22 +4,27 @@ import by.nc.training.dev3.coffee.dao.impl.BeverageDaoImpl;
 import by.nc.training.dev3.coffee.dao.impl.IngredientDaoImpl;
 import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IIngredientDao;
+import by.nc.training.dev3.coffee.dto.ContentDto;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.CoffeeMachineService;
+import by.nc.training.dev3.coffee.utils.DtoBuiler;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Win on 07.05.2017.
  */
 @Service
+@Transactional
 public class CoffeeMachineServiceImpl implements CoffeeMachineService {
 
     private static Logger logger = Logger.getLogger(CoffeeMachineServiceImpl.class);
@@ -32,10 +37,15 @@ public class CoffeeMachineServiceImpl implements CoffeeMachineService {
     private CoffeeMachineServiceImpl(){}
 
 
-    public List<Beverage> showBeverageInMachine()throws ServiceException {
-        List<Beverage> beverages;
+    public List<ContentDto> showBeverageInMachine()throws ServiceException {
+        List<ContentDto> beverages = new ArrayList<ContentDto>();
+        ContentDto contentDto;
         try {
-            beverages=beverageDao.getAll();
+            for (Beverage beverage : beverageDao.getAll()) {
+                contentDto = DtoBuiler.contentDtoBuilder(beverage);
+                beverages.add(contentDto);
+
+            }
         } catch (DaoException e) {
             logger.error(message+e);
             message="The beverages was not found";
@@ -44,10 +54,15 @@ public class CoffeeMachineServiceImpl implements CoffeeMachineService {
         return beverages;
     }
 
-    public List<Ingredient> showIngredientsInMachine()throws ServiceException {
-        List<Ingredient> ingredients;
+    public List<ContentDto> showIngredientsInMachine()throws ServiceException {
+        ContentDto contentDto;
+        List<ContentDto> ingredients=new ArrayList<ContentDto>();
         try {
-            ingredients=ingredientDao.getAll();
+            for (Ingredient ingredient : ingredientDao.getAll()) {
+                contentDto = DtoBuiler.contentDtoBuilder(ingredient);
+                ingredients.add(contentDto);
+
+            }
         } catch (DaoException e) {
             message="The ingredients was not found";
             throw new ServiceException(message, e);

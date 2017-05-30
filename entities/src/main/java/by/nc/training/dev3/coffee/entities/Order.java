@@ -1,5 +1,7 @@
 package by.nc.training.dev3.coffee.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -35,7 +37,7 @@ public class Order extends AbstractEntity {
     }
     private Beverage beverage;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "order_ingredient", joinColumns = {
             @JoinColumn(name = "order_id", nullable = false, updatable = false)},
             inverseJoinColumns = {@JoinColumn(name = "ingredient_id",

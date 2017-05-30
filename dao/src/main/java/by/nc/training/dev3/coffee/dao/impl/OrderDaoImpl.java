@@ -30,7 +30,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements IOrderDao {
     }
 
     public List<Order> getByBill(Bill bill)throws DaoException {
-        List<Order> list = new ArrayList<Order>();
+        List<Order> list;
         try {
             Session session = sessionFactory.getCurrentSession();
             Criteria criteria=session.createCriteria(Order.class);

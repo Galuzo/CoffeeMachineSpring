@@ -28,7 +28,7 @@ public class PersistenceConfig
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(restDataSource());
-        sessionFactory.setPackagesToScan(new String[] { "by.nc.training.dev3.coffee" });
+        sessionFactory.setPackagesToScan( "by.nc.training.dev3.coffee" );
         sessionFactory.setHibernateProperties(hibernateProperties());
 
         return sessionFactory;

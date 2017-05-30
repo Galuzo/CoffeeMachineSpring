@@ -28,7 +28,7 @@ public class BillServiceImplTest {
     public void showBill() throws Exception {
         int idUser=1;
         User user = userDao.getById(idUser);
-        billService.showBill(user);
+       // billService.showBeveragesInBill(user);
     }
 
 }

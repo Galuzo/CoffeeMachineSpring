@@ -1,5 +1,7 @@
 package by.nc.training.dev3.coffee.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import javax.persistence.Entity;
@@ -13,7 +15,7 @@ import java.util.Set;
 public class Beverage extends Content {
     public Beverage(){}
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "beverage")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "beverage")
     public Set<Order> getOrderSet() {
         return orderSet;
     }

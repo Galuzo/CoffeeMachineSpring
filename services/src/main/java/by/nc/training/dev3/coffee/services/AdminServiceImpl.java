@@ -15,23 +15,22 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by Win on 06.05.2017.
  */
 @Service
+@Transactional
 public class AdminServiceImpl implements AdminService {
     private static final Logger LOGGER = Logger.getLogger(AdminServiceImpl.class);
     private static  String message;
 
     @Autowired
     private IBeverageDao beverageDao;
+
     @Autowired
     private IIngredientDao ingredientDao;
-
-    @Autowired
-    private SessionFactory sessionFactory;
-
 
 
     public int addExistContentInMachine(ContentType contentType, int id, int count) throws ServiceException
@@ -39,61 +38,42 @@ public class AdminServiceImpl implements AdminService {
         int newValue;
         IDao dao = defineContentDao(contentType);
         Content content;
-        Session session = sessionFactory.getCurrentSession();
-        Transaction transaction=session.beginTransaction();
         try {
             content=(Content)dao.getById(id);
             content.setCount(Tools.incrementValue(content.getCount(),count));
             newValue = content.getCount();
             dao.update(content);
-            transaction.commit();
         } catch (DaoException e) {
             message="Transaction is failed(addExistContent)";
             LOGGER.error(message+e);
-            transaction.rollback();
             throw new ServiceException(message,e);
         }
         return newValue;
     }
 
-    public int addNewContentInMachine(ContentType contentType, String title, double cost, int count) throws ServiceException {
+    public int addNewContentInMachine(ContentType contentType, Content content) throws ServiceException {
         int id;
         IDao dao =defineContentDao(contentType);
-        Session session = sessionFactory.getCurrentSession();
-        Transaction transaction = session.beginTransaction();
         try {
-            Content content =Tools.defineContent(contentType);
-            content.setTitle(title);
-            content.setCost(cost);
-            content.setCount(count);
             id=(Integer)dao.save(content);
-            transaction.commit();
         } catch (DaoException e) {
             message="Transaction is failed(addNewContent)";
             LOGGER.error(message+e);
-            transaction.rollback();
             throw new ServiceException(message,e);
         }
         return id;
     }
 
-    public boolean removeContentFromMachine(ContentType contentType, int id) throws ServiceException{
-        boolean isSuccess;
+    public void removeContentFromMachine(ContentType contentType, int id) throws ServiceException{
         IDao dao = defineContentDao(contentType);
-        Session session = sessionFactory.getCurrentSession();
-        Transaction transaction = session.beginTransaction();
         try {
             Content beverage = (Content) dao.getById(id);
             dao.delete(beverage);
-            transaction.commit();
-            isSuccess=true;
         } catch (DaoException e) {
             message="Transaction is failed(remove content)";
             LOGGER.error(message+e);
-            transaction.rollback();
             throw new ServiceException(message,e);
         }
-        return isSuccess;
 
     }
     private IDao defineContentDao(ContentType contentType) {
