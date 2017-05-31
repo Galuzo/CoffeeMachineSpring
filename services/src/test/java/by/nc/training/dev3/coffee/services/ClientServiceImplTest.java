@@ -1,24 +1,14 @@
 package by.nc.training.dev3.coffee.services;
 
-import by.nc.training.dev3.coffee.dao.impl.*;
 import by.nc.training.dev3.coffee.dao.interfaces.*;
-import by.nc.training.dev3.coffee.entities.Bill;
-import by.nc.training.dev3.coffee.entities.Ingredient;
-import by.nc.training.dev3.coffee.entities.Order;
-import by.nc.training.dev3.coffee.entities.User;
+import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.interfaces.ClientService;
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Win on 09.05.2017.
@@ -29,7 +19,7 @@ import static org.junit.Assert.*;
 public class ClientServiceImplTest {
     @Autowired
     private  ClientService clientService;
-    private  User user;
+    private Account user;
     @Autowired
     private  IUserDao userDao;
     @Autowired

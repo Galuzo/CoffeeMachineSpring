@@ -1,7 +1,5 @@
 package by.nc.training.dev3.coffee.dto;
 
-import by.nc.training.dev3.coffee.entities.User;
-
 /**
  * Created by Win on 30.05.2017.
  */

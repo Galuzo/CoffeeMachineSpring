@@ -1,10 +1,6 @@
 package by.nc.training.dev3.coffee.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
-import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Entity;
 
@@ -28,13 +24,13 @@ public class Role extends AbstractEntity{
     private String title;
 
     @OneToMany(fetch = FetchType.LAZY,mappedBy ="role")
-    public Set<User> getUsers() {
+    public Set<Account> getUsers() {
         return users;
     }
-    public void setUsers(Set<User> users) {
+    public void setUsers(Set<Account> users) {
         this.users = users;
     }
-    private Set<User> users;
+    private Set<Account> users;
 
     @Override
     public boolean equals(Object o) {

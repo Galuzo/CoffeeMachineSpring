@@ -73,7 +73,7 @@ public class BillServiceImpl implements BillService {
     private List<Order> getOrders(int userId) {
         List<Order> orders=null;
         try {
-            User user = userDao.getById(userId);
+            Account user = userDao.getById(userId);
             Bill bill=billDao.getById(user.getBill().getId());
             orders= orderDao.getByBill(bill);
         } catch (DaoException e) {

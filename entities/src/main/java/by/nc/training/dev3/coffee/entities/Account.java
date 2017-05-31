@@ -1,18 +1,15 @@
 package by.nc.training.dev3.coffee.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * Created by Win on 03.05.2017.
  */
 @Entity
 @Table(name="users")
-public class User extends AbstractEntity{
+public class Account extends AbstractEntity{
 
-    public User(){}
+    public Account(){}
 
 
     @Column(name="login")
@@ -57,7 +54,7 @@ public class User extends AbstractEntity{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        User user = (User) o;
+        Account user = (Account) o;
 
         if (id != user.id) return false;
         if (!login.equals(user.login)) return false;
@@ -77,7 +74,7 @@ public class User extends AbstractEntity{
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Account{" +
                 "id=" + id +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +

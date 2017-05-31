@@ -1,10 +1,8 @@
 package by.nc.training.dev3.coffee.services;
 
-import by.nc.training.dev3.coffee.dao.impl.UserDaoImpl;
 import by.nc.training.dev3.coffee.dao.interfaces.IUserDao;
-import by.nc.training.dev3.coffee.entities.User;
+import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.interfaces.BillService;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +25,7 @@ public class BillServiceImplTest {
     @Test
     public void showBill() throws Exception {
         int idUser=1;
-        User user = userDao.getById(idUser);
+        Account user = userDao.getById(idUser);
        // billService.showBeveragesInBill(user);
     }
 

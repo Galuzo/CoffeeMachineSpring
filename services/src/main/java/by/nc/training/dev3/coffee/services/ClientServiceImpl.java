@@ -49,7 +49,7 @@ public class ClientServiceImpl implements ClientService {
         int returnId;
         Beverage beverageInMachine;
         try {
-            User user = userDao.getById(orderDto.getUserId());
+            Account user = userDao.getById(orderDto.getUserId());
             beverageInMachine = beverageDao.getById(orderDto.getBeverageId());
             if (beverageInMachine.getCount() > 0) {
                 bill = billDao.getByUser(user);
@@ -72,7 +72,7 @@ public class ClientServiceImpl implements ClientService {
 
     public void addIngredient(IngredientInOrderDto ingredientInOrderDto) throws ServiceException {
         try {
-            User user = userDao.getById(ingredientInOrderDto.getUserId());
+            Account user = userDao.getById(ingredientInOrderDto.getUserId());
             Ingredient ingredient=ingredientDao.getById(ingredientInOrderDto.getIngredientId());
             Order order=orderDao.getById(ingredientInOrderDto.getOrderId());
             if(ingredient.getCount()>0)
@@ -104,7 +104,7 @@ public class ClientServiceImpl implements ClientService {
     {
         try {
             Order order=orderDao.getById(idOrder);
-            User user = userDao.getById(userId);
+            Account user = userDao.getById(userId);
             if (user.getBill().getId() == order.getBill().getId()) {
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
                 for (Ingredient ingredient : ingredientSet) {
@@ -131,7 +131,7 @@ public class ClientServiceImpl implements ClientService {
     {
         try {
             Order order = orderDao.getById(idOrder);
-            User user = userDao.getById(userId);
+            Account user = userDao.getById(userId);
             Ingredient deletedIngredient = ingredientDao.getById(idIngredient);
             if (order.getBill().getId() == user.getBill().getId()) {
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
@@ -156,7 +156,7 @@ public class ClientServiceImpl implements ClientService {
 
     }
 
-    public void  payBill(User user) throws ServiceException {
+    public void  payBill(Account user) throws ServiceException {
         try {
             Bill bill=billDao.getByUser(user);
             List<Order> orders=orderDao.getByBill(bill);

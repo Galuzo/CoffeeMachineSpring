@@ -1,9 +1,6 @@
 package by.nc.training.dev3.coffee.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -34,13 +31,13 @@ public class Bill extends AbstractEntity{
 
     @OneToOne()
     @JoinColumn(name="user_id")
-    public User getUser() {
+    public Account getUser() {
         return user;
     }
-    public void setUser(User user) {
+    public void setUser(Account user) {
         this.user = user;
     }
-    private User user;
+    private Account user;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "bill")
     public Set<Order> getOrderSet() {

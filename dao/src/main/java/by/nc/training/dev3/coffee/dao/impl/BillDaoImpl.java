@@ -3,7 +3,7 @@ package by.nc.training.dev3.coffee.dao.impl;
 import by.nc.training.dev3.coffee.dao.AbstractDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IBillDao;
 import by.nc.training.dev3.coffee.entities.Bill;
-import by.nc.training.dev3.coffee.entities.User;
+import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -28,7 +28,7 @@ public class BillDaoImpl extends AbstractDao<Bill> implements IBillDao {
 
 
 
-    public Bill getByUser(User user) throws DaoException {
+    public Bill getByUser(Account user) throws DaoException {
         Bill bill;
         try {
             Session session = sessionFactory.getCurrentSession();
