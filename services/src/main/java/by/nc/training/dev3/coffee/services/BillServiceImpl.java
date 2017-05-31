@@ -10,7 +10,9 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.BillService;
 import by.nc.training.dev3.coffee.utils.DtoBuiler;
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
@@ -28,7 +30,7 @@ import java.util.Set;
 @Service
 @Transactional
 public class BillServiceImpl implements BillService {
-    private static Logger logger = Logger.getLogger(ClientServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ClientServiceImpl.class);
     private static  String message;
 
     @Autowired

@@ -5,6 +5,7 @@ import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.CoffeeMachineService;
+import org.apache.log4j.spi.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Created by Win on 24.05.2017.

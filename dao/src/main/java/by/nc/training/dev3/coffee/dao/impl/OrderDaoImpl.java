@@ -5,12 +5,14 @@ import by.nc.training.dev3.coffee.dao.interfaces.IOrderDao;
 import by.nc.training.dev3.coffee.entities.Bill;
 import by.nc.training.dev3.coffee.entities.Order;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
-import org.apache.log4j.Logger;
+
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -22,7 +24,7 @@ import java.util.List;
  */
 @Repository
 public class OrderDaoImpl extends AbstractDao<Order> implements IOrderDao {
-    private static final Logger LOGGER = Logger.getLogger(OrderDaoImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(OrderDaoImpl.class);
 
     @Autowired
     protected OrderDaoImpl(SessionFactory sessionFactory) {

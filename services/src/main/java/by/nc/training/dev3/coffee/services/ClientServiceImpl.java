@@ -8,8 +8,9 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.ClientService;
 import by.nc.training.dev3.coffee.utils.Tools;
-import org.apache.log4j.Logger;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
@@ -25,7 +26,7 @@ import java.util.Set;
 @Service
 @Transactional
 public class ClientServiceImpl implements ClientService {
-    private static Logger logger = Logger.getLogger(ClientServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ClientServiceImpl.class);
     private static  String message;
 
     @Autowired
@@ -68,7 +69,7 @@ public class ClientServiceImpl implements ClientService {
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
-            logger.error(e);
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
         return returnId;
@@ -100,7 +101,7 @@ public class ClientServiceImpl implements ClientService {
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
-            logger.error(e);
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
     }
@@ -128,7 +129,7 @@ public class ClientServiceImpl implements ClientService {
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
-            logger.error(e);
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
     }
@@ -157,7 +158,7 @@ public class ClientServiceImpl implements ClientService {
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
-            logger.error(e);
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
 
@@ -171,7 +172,7 @@ public class ClientServiceImpl implements ClientService {
                orderDao.delete(order);
             }
         } catch (DaoException e) {
-            logger.error(e);
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
     }

@@ -3,10 +3,11 @@ package by.nc.training.dev3.coffee.dao;
 import by.nc.training.dev3.coffee.dao.interfaces.IDao;
 import by.nc.training.dev3.coffee.entities.AbstractEntity;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
-import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +21,7 @@ import java.util.List;
  * Created by Win on 04.05.2017.
  */
 public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> {
-    private static final Logger LOGGER = Logger.getLogger(AbstractDao.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AbstractDao.class);
 
 
     protected SessionFactory sessionFactory;

@@ -4,12 +4,13 @@ import by.nc.training.dev3.coffee.dao.AbstractDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IUserDao;
 import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
-import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Repository
 public class UserDaoImpl extends AbstractDao<Account> implements IUserDao {
-    private static final Logger LOGGER = Logger.getLogger(UserDaoImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoImpl.class);
     static String message;
 
     @Autowired

@@ -9,11 +9,11 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.AdminService;
 import by.nc.training.dev3.coffee.utils.Tools;
-import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
-import org.hibernate.Session;
-import org.apache.log4j.Logger;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import org.slf4j.Logger;
+
+import org.slf4j.LoggerFactory;
+import org.slf4j.impl.StaticLoggerBinder;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,7 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class AdminServiceImpl implements AdminService {
-    private static final Logger LOGGER = Logger.getLogger(AdminServiceImpl.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AdminServiceImpl.class);
     private static  String message;
 
     @Autowired
