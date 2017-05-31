@@ -48,7 +48,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = "beverages",method =RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void addNewBeverage(@RequestBody Content beverage) {
+    public void addNewBeverage(@RequestBody Beverage beverage) {
         try {
             adminService.addNewContentInMachine(ContentType.BEVERAGE, beverage);
         } catch (ServiceException e) {
@@ -57,7 +57,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = "ingredients",method =RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void addNewIngredient(@RequestBody Content ingredient) {
+    public void addNewIngredient(@RequestBody Ingredient ingredient) {
         try {
             adminService.addNewContentInMachine(ContentType.BEVERAGE, ingredient);
         } catch (ServiceException e) {

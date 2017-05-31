@@ -12,6 +12,8 @@ import by.nc.training.dev3.coffee.interfaces.BillService;
 import by.nc.training.dev3.coffee.utils.DtoBuiler;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,16 +41,23 @@ public class BillServiceImpl implements BillService {
 
     private BillServiceImpl(){}
 
-    public List<ContentDto> showBeveragesInBill(int userId) throws ServiceException
+    public List<ContentDto> showBeveragesInBill() throws ServiceException
     {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         List<ContentDto> beverages = new ArrayList<ContentDto>();
-        List<Order> list = getOrders(userId);
-        ContentDto contentDto;
-        for(Order order:list)
-        {
-            contentDto = DtoBuiler.contentDtoBuilder(order.getBeverage());
-            beverages.add(contentDto);
+        try {
+            Account account = userDao.getByLogin(user.getUsername());
+            List<Order> list = getOrders(account.getId());
+            ContentDto contentDto;
+            for(Order order:list)
+            {
+                contentDto = DtoBuiler.contentDtoBuilder(order.getBeverage());
+                beverages.add(contentDto);
+            }
+        } catch (DaoException e) {
+            throw new ServiceException(e);
         }
+
         return beverages;
     }
 
@@ -83,13 +92,22 @@ public class BillServiceImpl implements BillService {
     }
 
     @Override
-    public List<DetailOrderDto> showOrders(int userId) {
+    public List<DetailOrderDto> showOrders() throws ServiceException {
         List<DetailOrderDto> orders = new ArrayList<DetailOrderDto>();
-        DetailOrderDto detailOrderDto;
-        for (Order order : getOrders(userId)) {
-            detailOrderDto = DtoBuiler.detailOrderDtoBuilder(order);
-            orders.add(detailOrderDto);
+
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        try {
+            Account account = userDao.getByLogin(user.getUsername());
+            DetailOrderDto detailOrderDto;
+            for (Order order : getOrders(account.getId())) {
+                detailOrderDto = DtoBuiler.detailOrderDtoBuilder(order);
+                orders.add(detailOrderDto);
+            }
+        } catch (DaoException e) {
+            throw new ServiceException(e);
         }
+
+
         return orders;
     }
 

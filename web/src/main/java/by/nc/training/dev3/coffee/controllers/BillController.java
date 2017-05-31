@@ -22,11 +22,11 @@ public class BillController {
     @Autowired
     private BillService billService;
 
-    @RequestMapping(value = "/beverages/{id}",method = RequestMethod.GET)
-    public List<ContentDto>  showBeveragesFromBill(@PathVariable("id") int id) {
+    @RequestMapping(value = "/beverages",method = RequestMethod.GET)
+    public List<ContentDto>  showBeveragesFromBill() {
         List<ContentDto> list=null;
         try {
-            list=billService.showBeveragesInBill(id);
+            list=billService.showBeveragesInBill();
         } catch (ServiceException e) {
             e.printStackTrace();
         }
@@ -44,9 +44,15 @@ public class BillController {
         return ingredients;
     }
 
-    @RequestMapping(value ="/orders/{id}",method = RequestMethod.GET)
-    public List<DetailOrderDto> showOrders(@PathVariable("id") int userId) {
-        return billService.showOrders(userId);
+    @RequestMapping(value ="/orders",method = RequestMethod.GET)
+    public List<DetailOrderDto> showOrders() {
+        List<DetailOrderDto> list=null;
+        try {
+            list= billService.showOrders();
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
+        return list;
     }
 
 

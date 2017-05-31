@@ -13,9 +13,9 @@ public interface ClientService {
 
     void addIngredient(IngredientInOrderDto ingredientInOrderDto) throws ServiceException;
 
-    void removeBeverageFromBill(int userId, int idOrder) throws ServiceException;
+    void removeBeverageFromBill(int idOrder) throws ServiceException;
 
-    void removeIngredient(int userId, int idOrder, int idIngredient) throws ServiceException;
+    void removeIngredient( int idOrder, int idIngredient) throws ServiceException;
 
     void  payBill(Account user) throws ServiceException;
 }

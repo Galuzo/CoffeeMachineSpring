@@ -6,10 +6,7 @@ import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
 
@@ -22,7 +19,7 @@ public class ClientController {
     @Autowired
     ClientService clientService;
 
-    @RequestMapping(value = "beverages",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/beverages",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addBeverageInBill(@RequestBody OrderDto orderDto)
     {
         try {
@@ -31,7 +28,7 @@ public class ClientController {
             e.printStackTrace();
         }
     }
-    @RequestMapping(value = "ingredients",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/ingredients",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addIngredientInBill(@RequestBody IngredientInOrderDto ingredientInOrderDto)
     {
         try {
@@ -41,20 +38,20 @@ public class ClientController {
         }
     }
 
-    @RequestMapping(value = "beverages",method = RequestMethod.DELETE)
-    public void removeBeverageFromBill(@PathParam("userId") int userId,@PathParam("orderId") int orderId) {
+    @RequestMapping(value = "/beverages/{id}",method = RequestMethod.DELETE)
+    public void removeBeverageFromBill(@PathVariable("id") int orderId) {
         try {
-            clientService.removeBeverageFromBill(userId,orderId);
+            clientService.removeBeverageFromBill(orderId);
         } catch (ServiceException e) {
             e.printStackTrace();
         }
     }
 
-    @RequestMapping(value = "ingredients",method = RequestMethod.DELETE)
-    public void removeIngredient(@PathParam("userId") int userId, @PathParam("orderId") int orderId,@PathParam("ingredientId") int ingredientID)
+    @RequestMapping(value = "/ingredients",method = RequestMethod.DELETE)
+    public void removeIngredient(@PathParam("orderId") int orderId,@PathParam("ingredientId") int ingredientId)
     {
         try {
-            clientService.removeIngredient(userId,orderId,ingredientID);
+            clientService.removeIngredient(orderId,ingredientId);
         } catch (ServiceException e) {
             e.printStackTrace();
         }

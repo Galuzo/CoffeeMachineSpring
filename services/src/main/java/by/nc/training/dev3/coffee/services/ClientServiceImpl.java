@@ -9,7 +9,10 @@ import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.ClientService;
 import by.nc.training.dev3.coffee.utils.Tools;
 import org.apache.log4j.Logger;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -49,10 +52,11 @@ public class ClientServiceImpl implements ClientService {
         int returnId;
         Beverage beverageInMachine;
         try {
-            Account user = userDao.getById(orderDto.getUserId());
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            Account account = userDao.getByLogin(user.getUsername());
             beverageInMachine = beverageDao.getById(orderDto.getBeverageId());
             if (beverageInMachine.getCount() > 0) {
-                bill = billDao.getByUser(user);
+                bill = billDao.getByUser(account);
                 beverageInMachine.setCount(Tools.decrementValue(beverageInMachine.getCount(), 1));
                 order = new Order();
                 order.setBill(bill);
@@ -72,12 +76,13 @@ public class ClientServiceImpl implements ClientService {
 
     public void addIngredient(IngredientInOrderDto ingredientInOrderDto) throws ServiceException {
         try {
-            Account user = userDao.getById(ingredientInOrderDto.getUserId());
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            Account account = userDao.getByLogin(user.getUsername());
             Ingredient ingredient=ingredientDao.getById(ingredientInOrderDto.getIngredientId());
             Order order=orderDao.getById(ingredientInOrderDto.getOrderId());
             if(ingredient.getCount()>0)
             {
-                if(order.getBill().getId()==user.getBill().getId()) {
+                if(order.getBill().getId()==account.getBill().getId()) {
                     ingredient.setCount(Tools.decrementValue(ingredient.getCount(), 1));
                     order.getIngredientSet().add(ingredient);
                     ingredientDao.update(ingredient);
@@ -100,18 +105,19 @@ public class ClientServiceImpl implements ClientService {
         }
     }
 
-    public void removeBeverageFromBill(int userId, int idOrder) throws ServiceException
+    public void removeBeverageFromBill( int idOrder) throws ServiceException
     {
         try {
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            Account account = userDao.getByLogin(user.getUsername());
             Order order=orderDao.getById(idOrder);
-            Account user = userDao.getById(userId);
-            if (user.getBill().getId() == order.getBill().getId()) {
+            if (account.getBill().getId() == order.getBill().getId()) {
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
                 for (Ingredient ingredient : ingredientSet) {
                     ingredient.setCount(Tools.incrementValue(ingredient.getCount(),1));
-                    ingredientSet.remove(ingredient);
                     ingredientDao.update(ingredient);
                 }
+                ingredientSet.clear();
                 Beverage beverage = order.getBeverage();
                 beverage.setCount(Tools.incrementValue(beverage.getCount(),1));
                 beverageDao.update(beverage);
@@ -127,13 +133,14 @@ public class ClientServiceImpl implements ClientService {
         }
     }
 
-    public void removeIngredient(int userId, int idOrder, int idIngredient) throws ServiceException
+    public void removeIngredient( int idOrder, int idIngredient) throws ServiceException
     {
         try {
+            User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+            Account account = userDao.getByLogin(user.getUsername());
             Order order = orderDao.getById(idOrder);
-            Account user = userDao.getById(userId);
             Ingredient deletedIngredient = ingredientDao.getById(idIngredient);
-            if (order.getBill().getId() == user.getBill().getId()) {
+            if (order.getBill().getId() == account.getBill().getId()) {
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
                 for (Ingredient ingredient : ingredientSet) {
                     if(ingredient==deletedIngredient)

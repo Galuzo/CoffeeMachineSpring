@@ -9,6 +9,7 @@ import by.nc.training.dev3.coffee.exceptions.DaoException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.AdminService;
 import by.nc.training.dev3.coffee.utils.Tools;
+import org.apache.tomcat.util.net.openssl.ciphers.Authentication;
 import org.hibernate.Session;
 import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
@@ -33,11 +34,14 @@ public class AdminServiceImpl implements AdminService {
     private IIngredientDao ingredientDao;
 
 
+
+
     public int addExistContentInMachine(ContentType contentType, int id, int count) throws ServiceException
     {
         int newValue;
         IDao dao = defineContentDao(contentType);
         Content content;
+
         try {
             content=(Content)dao.getById(id);
             content.setCount(Tools.incrementValue(content.getCount(),count));

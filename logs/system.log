@@ -3739,3 +3739,19 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'hib
 2017-05-30 23:16:50,329 +0300 [http-nio-8080-exec-1] ERROR (UserDaoImpl.java:38) - Unable to get Account by loginorg.hibernate.HibernateException: Could not obtain transaction-synchronized Session for current thread
 2017-05-30 23:17:35,539 +0300 [http-nio-8080-exec-1] ERROR (UserDaoImpl.java:38) - Unable to get Account by loginorg.hibernate.HibernateException: Could not obtain transaction-synchronized Session for current thread
 2017-05-30 23:19:44,186 +0300 [http-nio-8080-exec-2] ERROR (UserDaoImpl.java:38) - Unable to get Account by loginorg.hibernate.HibernateException: Could not obtain transaction-synchronized Session for current thread
+2017-05-31 15:04:41,484 +0300 [http-nio-8080-exec-4] ERROR (AbstractDao.java:71) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-31 15:04:41,486 +0300 [http-nio-8080-exec-4] ERROR (ClientServiceImpl.java:67) - by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 15:04:49,594 +0300 [http-nio-8080-exec-5] ERROR (AbstractDao.java:71) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-31 15:04:49,594 +0300 [http-nio-8080-exec-5] ERROR (ClientServiceImpl.java:67) - by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 15:04:55,953 +0300 [http-nio-8080-exec-6] ERROR (AbstractDao.java:71) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-31 15:04:55,954 +0300 [http-nio-8080-exec-6] ERROR (ClientServiceImpl.java:67) - by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 15:06:35,640 +0300 [http-nio-8080-exec-4] ERROR (AbstractDao.java:71) - Error was thrown in DAO: java.lang.NullPointerException
+2017-05-31 15:06:35,642 +0300 [http-nio-8080-exec-4] ERROR (ClientServiceImpl.java:67) - by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 19:24:50,009 +0300 [http-nio-8080-exec-3] ERROR (AbstractDao.java:45) - Error was thrown in DAO: org.hibernate.MappingException: Unknown entity: by.nc.training.dev3.coffee.entities.Content
+2017-05-31 19:24:50,009 +0300 [http-nio-8080-exec-3] ERROR (AdminServiceImpl.java:65) - Transaction is failed(addNewContent)by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 19:26:52,078 +0300 [http-nio-8080-exec-4] ERROR (AbstractDao.java:45) - Error was thrown in DAO: org.hibernate.MappingException: Unknown entity: by.nc.training.dev3.coffee.entities.Content
+2017-05-31 19:27:03,674 +0300 [http-nio-8080-exec-4] ERROR (AdminServiceImpl.java:65) - Transaction is failed(addNewContent)by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 19:27:25,430 +0300 [http-nio-8080-exec-5] ERROR (AbstractDao.java:45) - Error was thrown in DAO: org.hibernate.MappingException: Unknown entity: by.nc.training.dev3.coffee.entities.Content
+2017-05-31 19:27:25,430 +0300 [http-nio-8080-exec-5] ERROR (AdminServiceImpl.java:65) - Transaction is failed(addNewContent)by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 
+2017-05-31 19:29:21,038 +0300 [http-nio-8080-exec-3] ERROR (AbstractDao.java:45) - Error was thrown in DAO: org.hibernate.MappingException: Unknown entity: by.nc.training.dev3.coffee.entities.Content
+2017-05-31 19:29:21,048 +0300 [http-nio-8080-exec-3] ERROR (AdminServiceImpl.java:65) - Transaction is failed(addNewContent)by.nc.training.dev3.coffee.exceptions.DaoException: Error was thrown in DAO: 

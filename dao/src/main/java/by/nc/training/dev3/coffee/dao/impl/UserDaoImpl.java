@@ -27,7 +27,6 @@ public class UserDaoImpl extends AbstractDao<Account> implements IUserDao {
         super(Account.class,sessionFactory);
     }
 
-    @Transactional
     public Account getByLogin(String login) throws DaoException {
         try {
             Session session = sessionFactory.getCurrentSession();

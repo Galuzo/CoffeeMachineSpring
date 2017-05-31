@@ -12,8 +12,8 @@ import java.util.Set;
  * Created by Win on 11.05.2017.
  */
 public interface BillService {
-    List<ContentDto> showBeveragesInBill(int userId) throws ServiceException;
+    List<ContentDto> showBeveragesInBill() throws ServiceException;
     Set<ContentDto> showIngredientsInBeverage(int orderId) throws ServiceException;
-    List<DetailOrderDto> showOrders(int userId);
+    List<DetailOrderDto> showOrders() throws ServiceException;
 
 }
