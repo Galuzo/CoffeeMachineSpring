@@ -1,6 +1,7 @@
 package by.nc.training.dev3.coffee.services;
 
 import by.nc.training.dev3.coffee.dao.interfaces.*;
+import by.nc.training.dev3.coffee.dto.IngredientForRemoveFromBeverageDto;
 import by.nc.training.dev3.coffee.dto.OrderDto;
 import by.nc.training.dev3.coffee.dto.IngredientInOrderDto;
 import by.nc.training.dev3.coffee.entities.*;
@@ -17,6 +18,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Set;
 
@@ -58,11 +60,14 @@ public class ClientServiceImpl implements ClientService {
             beverageInMachine = beverageDao.getById(orderDto.getBeverageId());
             if (beverageInMachine.getCount() > 0) {
                 bill = billDao.getByUser(account);
+                bill.setDate(GregorianCalendar.getInstance().getTime());
+                bill.setGeneralCost(bill.getGeneralCost() + beverageInMachine.getCost());
                 beverageInMachine.setCount(Tools.decrementValue(beverageInMachine.getCount(), 1));
                 order = new Order();
                 order.setBill(bill);
                 order.setBeverage(beverageInMachine);
                 beverageDao.update(beverageInMachine);
+                billDao.update(bill);
                 returnId=(Integer)orderDao.save(order);
             } else {
                 message="The beverage count is less then 0";
@@ -84,9 +89,13 @@ public class ClientServiceImpl implements ClientService {
             if(ingredient.getCount()>0)
             {
                 if(order.getBill().getId()==account.getBill().getId()) {
+                    Bill bill = billDao.getByUser(account);
+                    bill.setDate(GregorianCalendar.getInstance().getTime());
+                    bill.setGeneralCost(bill.getGeneralCost() + ingredient.getCost());
                     ingredient.setCount(Tools.decrementValue(ingredient.getCount(), 1));
                     order.getIngredientSet().add(ingredient);
                     ingredientDao.update(ingredient);
+                    billDao.update(bill);
                     orderDao.update(order);
                 }
                 else
@@ -113,15 +122,20 @@ public class ClientServiceImpl implements ClientService {
             Account account = userDao.getByLogin(user.getUsername());
             Order order=orderDao.getById(idOrder);
             if (account.getBill().getId() == order.getBill().getId()) {
+                Bill bill = billDao.getByUser(account);
+                bill.setDate(GregorianCalendar.getInstance().getTime());
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
                 for (Ingredient ingredient : ingredientSet) {
                     ingredient.setCount(Tools.incrementValue(ingredient.getCount(),1));
+                    bill.setGeneralCost(bill.getGeneralCost()-ingredient.getCost());
                     ingredientDao.update(ingredient);
                 }
                 ingredientSet.clear();
                 Beverage beverage = order.getBeverage();
                 beverage.setCount(Tools.incrementValue(beverage.getCount(),1));
+                bill.setGeneralCost(bill.getGeneralCost()-beverage.getCost());
                 beverageDao.update(beverage);
+                billDao.update(bill);
                 orderDao.delete(order);
             }
             else {
@@ -134,18 +148,21 @@ public class ClientServiceImpl implements ClientService {
         }
     }
 
-    public void removeIngredient( int idOrder, int idIngredient) throws ServiceException
+    public void removeIngredient(IngredientForRemoveFromBeverageDto ingredientForRemoveFromBeverageDto) throws ServiceException
     {
         try {
             User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
             Account account = userDao.getByLogin(user.getUsername());
-            Order order = orderDao.getById(idOrder);
-            Ingredient deletedIngredient = ingredientDao.getById(idIngredient);
+            Order order = orderDao.getById(ingredientForRemoveFromBeverageDto.getOrderId());
+            Ingredient deletedIngredient = ingredientDao.getById(ingredientForRemoveFromBeverageDto.getIngredientId());
             if (order.getBill().getId() == account.getBill().getId()) {
                 Set<Ingredient> ingredientSet=order.getIngredientSet();
                 for (Ingredient ingredient : ingredientSet) {
                     if(ingredient==deletedIngredient)
                     {
+                        Bill bill = billDao.getByUser(account);
+                        bill.setDate(GregorianCalendar.getInstance().getTime());
+                        bill.setGeneralCost(bill.getGeneralCost()-ingredient.getCost());
                         ingredient.setCount(Tools.incrementValue(ingredient.getCount(),1));
                         ingredientSet.remove(ingredient);
                         ingredientDao.update(ingredient);

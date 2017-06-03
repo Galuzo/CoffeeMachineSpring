@@ -1,5 +1,6 @@
 package by.nc.training.dev3.coffee.interfaces;
 
+import by.nc.training.dev3.coffee.dto.IngredientForRemoveFromBeverageDto;
 import by.nc.training.dev3.coffee.dto.OrderDto;
 import by.nc.training.dev3.coffee.dto.IngredientInOrderDto;
 import by.nc.training.dev3.coffee.entities.Account;
@@ -15,7 +16,7 @@ public interface ClientService {
 
     void removeBeverageFromBill(int idOrder) throws ServiceException;
 
-    void removeIngredient( int idOrder, int idIngredient) throws ServiceException;
+    void removeIngredient(IngredientForRemoveFromBeverageDto ingredientForRemoveFromBeverageDto) throws ServiceException;
 
     void  payBill(Account user) throws ServiceException;
 }

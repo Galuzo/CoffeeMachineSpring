@@ -1,7 +1,9 @@
 package by.nc.training.dev3.coffee.controllers;
 
+import by.nc.training.dev3.coffee.dto.BillDto;
 import by.nc.training.dev3.coffee.dto.ContentDto;
 import by.nc.training.dev3.coffee.dto.DetailOrderDto;
+import by.nc.training.dev3.coffee.entities.Bill;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.BillService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,6 +55,17 @@ public class BillController {
             e.printStackTrace();
         }
         return list;
+    }
+
+    @RequestMapping(value = "/",method = RequestMethod.GET)
+    public BillDto showGeneralCost() {
+        BillDto billDto=null;
+        try {
+            billDto=billService.showGeneralCost();
+        } catch (ServiceException e) {
+            e.printStackTrace();
+        }
+        return billDto;
     }
 
 

@@ -22,7 +22,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/machine")
 public class CoffeeMachineController {
-    private  final Logger LOGGER = LoggerFactory.getLogger(CoffeeMachineController.class);
 
 
     @Autowired
@@ -31,7 +30,6 @@ public class CoffeeMachineController {
     @RequestMapping(value = "/beverages",method = RequestMethod.GET)
     public Collection<ContentDto> getAllBeverages()
     {
-        LOGGER.info("aaaaaaaaaaaaaaaaaaaaa");
 
         List<ContentDto> beverages=null;
         try {

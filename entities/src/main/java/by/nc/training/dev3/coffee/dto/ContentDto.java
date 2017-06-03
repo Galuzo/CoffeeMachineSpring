@@ -4,9 +4,18 @@ package by.nc.training.dev3.coffee.dto;
  * Created by Win on 30.05.2017.
  */
 public class ContentDto {
+    private int id;
     private double cost;
     private int count;
     private String title;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public double getCost() {
         return cost;

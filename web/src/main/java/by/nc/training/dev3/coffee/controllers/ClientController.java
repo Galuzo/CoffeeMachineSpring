@@ -1,5 +1,6 @@
 package by.nc.training.dev3.coffee.controllers;
 
+import by.nc.training.dev3.coffee.dto.IngredientForRemoveFromBeverageDto;
 import by.nc.training.dev3.coffee.dto.OrderDto;
 import by.nc.training.dev3.coffee.dto.IngredientInOrderDto;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
@@ -47,11 +48,11 @@ public class ClientController {
         }
     }
 
-    @RequestMapping(value = "/ingredients",method = RequestMethod.DELETE)
-    public void removeIngredient(@PathParam("orderId") int orderId,@PathParam("ingredientId") int ingredientId)
+    @RequestMapping(value = "/ingredients",method = RequestMethod.DELETE,consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void removeIngredient(@RequestBody IngredientForRemoveFromBeverageDto ingredientForRemoveFromBeverageDto)
     {
         try {
-            clientService.removeIngredient(orderId,ingredientId);
+            clientService.removeIngredient(ingredientForRemoveFromBeverageDto);
         } catch (ServiceException e) {
             e.printStackTrace();
         }

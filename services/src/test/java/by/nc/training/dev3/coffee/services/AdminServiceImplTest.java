@@ -2,6 +2,7 @@ package by.nc.training.dev3.coffee.services;
 
 import by.nc.training.dev3.coffee.dao.impl.BeverageDaoImpl;
 import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
+import by.nc.training.dev3.coffee.dto.ContentForIncDto;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Content;
 import by.nc.training.dev3.coffee.entities.Ingredient;
@@ -48,7 +49,10 @@ public class AdminServiceImplTest {
         content.setTitle(TITLE);
         content.setCost(COST);
         int id= adminService.addNewContentInMachine(ContentType.INGREDIENT,content);
-        int newCount= adminService.addExistContentInMachine(ContentType.INGREDIENT, id, incCount);
+        ContentForIncDto contentForIncDto = new ContentForIncDto();
+        contentForIncDto.setId(id);
+        contentForIncDto.setCount(incCount);
+        int newCount= adminService.addExistContentInMachine(ContentType.INGREDIENT,contentForIncDto);
         adminService.removeContentFromMachine(ContentType.INGREDIENT, id);
         assertEquals(expectedCount, newCount);
     }
@@ -62,7 +66,10 @@ public class AdminServiceImplTest {
         content.setCost(COST);
         int expectedCount = COUNT + incCount;
         int id= adminService.addNewContentInMachine(ContentType.BEVERAGE, content);
-        int newCount= adminService.addExistContentInMachine(ContentType.BEVERAGE, id, incCount);
+        ContentForIncDto contentForIncDto = new ContentForIncDto();
+        contentForIncDto.setId(id);
+        contentForIncDto.setCount(incCount);
+        int newCount= adminService.addExistContentInMachine(ContentType.BEVERAGE,contentForIncDto);
         adminService.removeContentFromMachine(ContentType.BEVERAGE, id);
         assertEquals(expectedCount, newCount);
     }

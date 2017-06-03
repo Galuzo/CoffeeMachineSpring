@@ -3,6 +3,7 @@ package by.nc.training.dev3.coffee.services;
 import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IIngredientDao;
+import by.nc.training.dev3.coffee.dto.ContentForIncDto;
 import by.nc.training.dev3.coffee.entities.Content;
 import by.nc.training.dev3.coffee.enums.ContentType;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
@@ -12,7 +13,6 @@ import by.nc.training.dev3.coffee.utils.Tools;
 import org.slf4j.Logger;
 
 import org.slf4j.LoggerFactory;
-import org.slf4j.impl.StaticLoggerBinder;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,15 +36,15 @@ public class AdminServiceImpl implements AdminService {
 
 
 
-    public int addExistContentInMachine(ContentType contentType, int id, int count) throws ServiceException
+    public int addExistContentInMachine(ContentType contentType, ContentForIncDto contentForIncDto) throws ServiceException
     {
         int newValue;
         IDao dao = defineContentDao(contentType);
         Content content;
 
         try {
-            content=(Content)dao.getById(id);
-            content.setCount(Tools.incrementValue(content.getCount(),count));
+            content=(Content)dao.getById(contentForIncDto.getId());
+            content.setCount(Tools.incrementValue(content.getCount(),contentForIncDto.getCount()));
             newValue = content.getCount();
             dao.update(content);
         } catch (DaoException e) {

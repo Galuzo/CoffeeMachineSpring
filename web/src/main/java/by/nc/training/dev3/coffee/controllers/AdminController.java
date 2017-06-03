@@ -1,7 +1,7 @@
 package by.nc.training.dev3.coffee.controllers;
 
+import by.nc.training.dev3.coffee.dto.ContentForIncDto;
 import by.nc.training.dev3.coffee.entities.Beverage;
-import by.nc.training.dev3.coffee.entities.Content;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.enums.ContentType;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
@@ -11,7 +11,6 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
-import java.awt.*;
 
 /**
  * Created by Win on 24.05.2017.
@@ -23,24 +22,24 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    @RequestMapping(value = "beverages",method = RequestMethod.PUT)
-    public void addExistBeverage(@PathParam("id") int id, @PathParam("count") int count )
+    @RequestMapping(value = "beverages",method = RequestMethod.PUT,consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void addExistBeverage(@RequestBody ContentForIncDto contentForIncDto)
     {
         try {
-            if(count>0) {
-                adminService.addExistContentInMachine(ContentType.BEVERAGE, id, count);
+            if(contentForIncDto.getCount()>0) {
+                adminService.addExistContentInMachine(ContentType.BEVERAGE, contentForIncDto);
             }
         } catch (ServiceException e) {
             e.printStackTrace();
         }
     }
 
-    @RequestMapping(value = "ingredients",method = RequestMethod.PUT)
-    public void addExistIngredient(@PathParam("id") int id, @PathParam("count") int count )
+    @RequestMapping(value = "ingredients",method = RequestMethod.PUT,consumes = MediaType.APPLICATION_JSON_VALUE)
+    public void addExistIngredient(@RequestBody ContentForIncDto contentForIncDto )
     {
         try {
-            if(count>0) {
-                adminService.addExistContentInMachine(ContentType.INGREDIENT, id, count);
+            if(contentForIncDto.getCount()>0) {
+                adminService.addExistContentInMachine(ContentType.INGREDIENT,contentForIncDto);
             }
         } catch (ServiceException e) {
             e.printStackTrace();

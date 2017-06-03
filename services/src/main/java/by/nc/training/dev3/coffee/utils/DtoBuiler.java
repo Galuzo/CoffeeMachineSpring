@@ -14,6 +14,7 @@ import java.util.*;
 public class DtoBuiler {
     public static ContentDto contentDtoBuilder(Content content) {
         ContentDto contentDto = new ContentDto();
+        contentDto.setId(content.getId());
         contentDto.setTitle(content.getTitle());
         contentDto.setCount(content.getCount());
         contentDto.setCost(content.getCost());
@@ -22,6 +23,7 @@ public class DtoBuiler {
 
     public static DetailOrderDto detailOrderDtoBuilder(Order order) {
         DetailOrderDto detailOrderDto = new DetailOrderDto();
+        detailOrderDto.setId(order.getId());
         detailOrderDto.setBeverage(contentDtoBuilder(order.getBeverage()));
         detailOrderDto.setIngredients(listContentBuilder(order.getIngredientSet()));
         return detailOrderDto;

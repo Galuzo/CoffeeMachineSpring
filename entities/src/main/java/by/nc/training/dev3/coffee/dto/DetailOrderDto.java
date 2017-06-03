@@ -10,8 +10,18 @@ import java.util.Set;
  * Created by Win on 30.05.2017.
  */
 public class DetailOrderDto {
+    private int id;
     private ContentDto beverage;
     private Set<ContentDto> ingredients;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public ContentDto getBeverage() {
         return beverage;

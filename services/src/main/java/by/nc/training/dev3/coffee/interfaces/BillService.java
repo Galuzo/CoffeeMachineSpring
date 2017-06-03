@@ -1,5 +1,6 @@
 package by.nc.training.dev3.coffee.interfaces;
 
+import by.nc.training.dev3.coffee.dto.BillDto;
 import by.nc.training.dev3.coffee.dto.ContentDto;
 import by.nc.training.dev3.coffee.dto.DetailOrderDto;
 import by.nc.training.dev3.coffee.entities.*;
@@ -15,5 +16,6 @@ public interface BillService {
     List<ContentDto> showBeveragesInBill() throws ServiceException;
     Set<ContentDto> showIngredientsInBeverage(int orderId) throws ServiceException;
     List<DetailOrderDto> showOrders() throws ServiceException;
+    BillDto showGeneralCost() throws ServiceException;
 
 }
