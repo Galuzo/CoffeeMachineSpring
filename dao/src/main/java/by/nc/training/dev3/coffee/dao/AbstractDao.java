@@ -23,7 +23,6 @@ import java.util.List;
 public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> {
     private static final Logger LOGGER = LoggerFactory.getLogger(AbstractDao.class);
 
-
     protected SessionFactory sessionFactory;
     private Class persistentClass;
 
@@ -61,7 +60,6 @@ public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> 
         }
     }
 
-    @Transactional
     public T getById(int entityId) throws DaoException {
         Session session;
         T entity ;

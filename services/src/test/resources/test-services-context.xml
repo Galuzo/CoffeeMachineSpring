@@ -15,14 +15,10 @@
     <aop:aspectj-autoproxy proxy-target-class="true" expose-proxy="false"/>
 
 
-    <bean id="adminService" class="by.nc.training.dev3.coffee.services.AdminServiceImpl">
+    <bean id="adminService" class="by.nc.training.dev3.coffee.services.AdminServiceImpl"/>
+    <bean id="persistenceConfig" class="by.nc.training.dev3.coffee.utils.PersistenceConfig">
     </bean>
-    <bean id="billService" class="by.nc.training.dev3.coffee.services.BillServiceImpl">
-    </bean>
-    <bean id="clientService" class="by.nc.training.dev3.coffee.services.ClientServiceImpl">
-    </bean>
-    <bean id="coffeeMachineService" class="by.nc.training.dev3.coffee.services.CoffeeMachineServiceImpl">
-    </bean>
+
 
 
 

@@ -1,11 +1,13 @@
 package by.nc.training.dev3.coffee.controllers;
 
+import by.nc.training.dev3.coffee.Main;
 import by.nc.training.dev3.coffee.dto.ContentDto;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.CoffeeMachineService;
-import org.apache.log4j.spi.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * Created by Win on 24.05.2017.
@@ -21,6 +22,8 @@ import java.util.logging.Logger;
 @RestController
 @RequestMapping("/machine")
 public class CoffeeMachineController {
+    private  final Logger LOGGER = LoggerFactory.getLogger(CoffeeMachineController.class);
+
 
     @Autowired
     CoffeeMachineService coffeeMachineService;
@@ -28,6 +31,8 @@ public class CoffeeMachineController {
     @RequestMapping(value = "/beverages",method = RequestMethod.GET)
     public Collection<ContentDto> getAllBeverages()
     {
+        LOGGER.info("aaaaaaaaaaaaaaaaaaaaa");
+
         List<ContentDto> beverages=null;
         try {
             beverages=coffeeMachineService.showBeverageInMachine();

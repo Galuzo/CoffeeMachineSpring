@@ -15,16 +15,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/login", "/logout").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/bill/**").hasRole("USER")
                 .antMatchers("/client/**").hasRole("USER")
                 .anyRequest().authenticated()
-                .and().addFilterAt(new CustomUsernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
-                .formLogin().loginProcessingUrl("/login")
                 .and()
-                .csrf().disable();
+                .addFilterAt(new CustomUsernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
+                .anonymous().disable().exceptionHandling()
+                .authenticationEntryPoint(new org.springframework.boot.autoconfigure.security.Http401AuthenticationEntryPoint("headerValue"))
+                .and()
+
+                .formLogin().loginPage("/login")
+                .defaultSuccessUrl("/", true).permitAll()
+                .and()
+
+                .logout().deleteCookies("JSESSIONID");
+
+
     }
 
 }

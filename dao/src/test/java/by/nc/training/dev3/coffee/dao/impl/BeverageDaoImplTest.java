@@ -2,16 +2,14 @@ package by.nc.training.dev3.coffee.dao.impl;
 
 import by.nc.training.dev3.coffee.dao.interfaces.IBeverageDao;
 import by.nc.training.dev3.coffee.entities.Beverage;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,24 +19,18 @@ import static org.junit.Assert.*;
 /**
  * Created by Win on 09.05.2017.
  */
-@RunWith(SpringRunner.class)
 @ContextConfiguration("/test-dao-context.xml")
-@ComponentScan
+@Transactional
+@Rollback(false)
+@RunWith(SpringRunner.class)
 public class BeverageDaoImplTest {
-    private Transaction transaction;
-    private  Session session;
+
     private final String TITLE = "latte";
     private final double COST=1.3;
     private final int COUNT=5;
 
     @Autowired
     private IBeverageDao beverageDao;
-
-    @Before
-    public void setup(){
-       // session=HibernateUtil.getInstance().getSession();
-        transaction=session.beginTransaction();
-    }
 
     @Test public void saveShouldReturnId() throws Exception
     {
@@ -113,11 +105,6 @@ public class BeverageDaoImplTest {
         assertNotNull(list.size());
     }
 
-    @After
-    public void tearDown() throws Exception{
-        transaction.commit();
-        transaction=null;
-    }
 
     private Beverage createNewBeverage() {
         Beverage beverage = new Beverage();
