@@ -299,4 +299,184 @@
 ""2017-06-03 19:38:30 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
 ""2017-06-03 19:38:30 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 7.634 seconds (JVM running for 8.209)
 ""2017-06-03 19:38:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:04:49 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 7032 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:04:49 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:04:49 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:04:49 MSK 2017]; root of context hierarchy
+""2017-06-04 11:04:52 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$8e5b42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:04:53 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:04:53 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:04:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:04:53 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:04:56 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@2fb68ec6] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:04:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ea996f, org.springframework.security.web.context.SecurityContextPersistenceFilter@35bfa1bb, org.springframework.security.web.header.HeaderWriterFilter@5707f613, org.springframework.security.web.authentication.logout.LogoutFilter@66e21568, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@3f9b7fe1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d4f5506, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68b11545, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1af4955e, org.springframework.security.web.session.SessionManagementFilter@6367a688, org.springframework.security.web.access.ExceptionTranslationFilter@100ad67e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d325518]
+""2017-06-04 11:04:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:04:57 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:04:57 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 9.013 seconds (JVM running for 9.829)
+""2017-06-04 11:08:55 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:10:11 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 5916 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:10:11 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:10:11 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:10:11 MSK 2017]; root of context hierarchy
+""2017-06-04 11:10:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$f75b15a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:10:14 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:10:14 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:10:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:10:15 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:10:17 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@6e5bfdfc] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:10:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d4f5506, org.springframework.security.web.context.SecurityContextPersistenceFilter@62aeddc8, org.springframework.security.web.header.HeaderWriterFilter@6ad1701a, org.springframework.security.web.authentication.logout.LogoutFilter@1af4955e, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@7dee835, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@787e4357, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5707f613, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@357bc488, org.springframework.security.web.session.SessionManagementFilter@22da2fe6, org.springframework.security.web.access.ExceptionTranslationFilter@6d6ac396, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@623e0631]
+""2017-06-04 11:10:18 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:10:18 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:10:19 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 8.584 seconds (JVM running for 9.331)
+""2017-06-04 11:10:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:11:55 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 3240 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:11:55 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:11:55 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:11:55 MSK 2017]; root of context hierarchy
+""2017-06-04 11:11:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$ef5f7e3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:11:58 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:11:58 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:11:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:11:58 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:12:00 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@60b85ba1] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:12:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@796d33eb, org.springframework.security.web.context.SecurityContextPersistenceFilter@6367a688, org.springframework.security.web.header.HeaderWriterFilter@713a35c5, org.springframework.security.web.authentication.logout.LogoutFilter@bb25753, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@5c059a68, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18a096b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59498d94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@309dcdf3, org.springframework.security.web.session.SessionManagementFilter@11787b64, org.springframework.security.web.access.ExceptionTranslationFilter@6ad1701a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12417468]
+""2017-06-04 11:12:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:12:01 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:12:01 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 7.342 seconds (JVM running for 7.876)
+""2017-06-04 11:12:04 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:13:07 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 3164 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:13:07 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:13:07 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:13:07 MSK 2017]; root of context hierarchy
+""2017-06-04 11:13:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$7521e791] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:13:11 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:13:11 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:13:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:13:11 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:13:12 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:13:14 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@492fc69e] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:13:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c059a68, org.springframework.security.web.context.SecurityContextPersistenceFilter@319642db, org.springframework.security.web.header.HeaderWriterFilter@62aeddc8, org.springframework.security.web.authentication.logout.LogoutFilter@ee21292, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@21ea996f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79b18230, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35bfa1bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7573b9ee, org.springframework.security.web.session.SessionManagementFilter@5707f613, org.springframework.security.web.access.ExceptionTranslationFilter@7ecda95b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@459003a0]
+""2017-06-04 11:13:15 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:13:16 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:13:16 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 9.23 seconds (JVM running for 9.829)
+""2017-06-04 11:13:29 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:15:17 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 7996 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:15:17 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:15:17 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:15:17 MSK 2017]; root of context hierarchy
+""2017-06-04 11:15:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$1cdcdb1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:15:21 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:15:21 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:15:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:15:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:15:24 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@6b5f8707] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:15:24 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fcbc766, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ecda95b, org.springframework.security.web.header.HeaderWriterFilter@6d6ac396, org.springframework.security.web.authentication.logout.LogoutFilter@5ba90d8a, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@28cd2c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@459003a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@100ad67e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35bfa1bb, org.springframework.security.web.session.SessionManagementFilter@f5a7226, org.springframework.security.web.access.ExceptionTranslationFilter@4a070cf0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16d07cf3]
+""2017-06-04 11:15:25 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:15:25 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:15:25 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 8.448 seconds (JVM running for 9.005)
+""2017-06-04 11:16:11 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:18:45 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 7448 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:18:45 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:18:45 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2034b64c: startup date [Sun Jun 04 11:18:45 MSK 2017]; root of context hierarchy
+""2017-06-04 11:18:47 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$e47dc57f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:18:48 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:18:48 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:18:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:18:48 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:18:49 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:18:51 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@1416a80a] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:18:52 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@399f5daf, org.springframework.security.web.context.SecurityContextPersistenceFilter@280484c7, org.springframework.security.web.header.HeaderWriterFilter@466fedfa, org.springframework.security.web.authentication.logout.LogoutFilter@621dc63d, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@c4cceb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@70485aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@258a8584, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4269aad7, org.springframework.security.web.session.SessionManagementFilter@2b1a901d, org.springframework.security.web.access.ExceptionTranslationFilter@429e7914, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11ad095c]
+""2017-06-04 11:18:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:18:52 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:18:52 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 8.512 seconds (JVM running for 9.812)
+""2017-06-04 11:18:57 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:19:33 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 1464 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:19:33 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:19:33 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:19:33 MSK 2017]; root of context hierarchy
+""2017-06-04 11:19:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$8e5b42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:19:36 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:19:36 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:19:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:19:36 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:19:38 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@2fb68ec6] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:19:39 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c059a68, org.springframework.security.web.context.SecurityContextPersistenceFilter@35bfa1bb, org.springframework.security.web.header.HeaderWriterFilter@5707f613, org.springframework.security.web.authentication.logout.LogoutFilter@66e21568, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@21ea996f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79b18230, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68b11545, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1af4955e, org.springframework.security.web.session.SessionManagementFilter@6367a688, org.springframework.security.web.access.ExceptionTranslationFilter@100ad67e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@459003a0]
+""2017-06-04 11:19:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:19:39 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:19:40 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 7.142 seconds (JVM running for 7.706)
+""2017-06-04 11:20:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:21:22 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 6716 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:21:22 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:21:22 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:21:22 MSK 2017]; root of context hierarchy
+""2017-06-04 11:21:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$8e5b42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:21:25 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:21:25 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:21:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:21:25 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:21:26 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:21:28 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@2fb68ec6] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:21:28 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ea996f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b321262, org.springframework.security.web.header.HeaderWriterFilter@77b3752b, org.springframework.security.web.authentication.logout.LogoutFilter@7f73ce28, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@3f9b7fe1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d4f5506, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d0100ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445821a6, org.springframework.security.web.session.SessionManagementFilter@319642db, org.springframework.security.web.access.ExceptionTranslationFilter@713a35c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d325518]
+""2017-06-04 11:21:29 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:21:29 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:21:29 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 7.461 seconds (JVM running for 8.079)
+""2017-06-04 11:21:33 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-06-04 11:22:37 [main] INFO  by.nc.training.dev3.coffee.Main - Starting Main on Win-ПК with PID 5748 (started by Win in E:\nc tasks\CoffeeMachineSpring)
+""2017-06-04 11:22:37 [main] INFO  by.nc.training.dev3.coffee.Main - No active profile set, falling back to default profiles: default
+""2017-06-04 11:22:37 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6b53e23f: startup date [Sun Jun 04 11:22:37 MSK 2017]; root of context hierarchy
+""2017-06-04 11:22:40 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'persistenceConfig' of type [by.nc.training.dev3.coffee.utils.PersistenceConfig$$EnhancerBySpringCGLIB$$8e5b42e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-06-04 11:22:41 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-06-04 11:22:41 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-06-04 11:22:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-06-04 11:22:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-06-04 11:22:43 [main] INFO  o.s.o.h.HibernateTransactionManager - Using DataSource [org.apache.tomcat.dbcp.dbcp.BasicDataSource@2fb68ec6] of Hibernate SessionFactory for HibernateTransactionManager
+""2017-06-04 11:22:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21ea996f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b321262, org.springframework.security.web.header.HeaderWriterFilter@77b3752b, org.springframework.security.web.authentication.logout.LogoutFilter@7f73ce28, by.nc.training.dev3.coffee.security.CustomUsernamePasswordAuthenticationFilter@3f9b7fe1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d4f5506, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d0100ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@445821a6, org.springframework.security.web.session.SessionManagementFilter@319642db, org.springframework.security.web.access.ExceptionTranslationFilter@713a35c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d325518]
+""2017-06-04 11:22:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-06-04 11:22:44 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-06-04 11:22:44 [main] INFO  by.nc.training.dev3.coffee.Main - Started Main in 8.123 seconds (JVM running for 8.781)
+""2017-06-04 11:22:55 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 "

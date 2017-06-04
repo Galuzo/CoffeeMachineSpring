@@ -22,7 +22,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/bill/**").hasRole("USER")
                 .antMatchers("/client/**").hasRole("USER")
                 .antMatchers("/machine/**").hasAnyRole("USER","ADMIN")
-                .anyRequest().authenticated()
                 .and()
                 .addFilterAt(new CustomUsernamePasswordAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class)
                 .anonymous().disable().exceptionHandling()

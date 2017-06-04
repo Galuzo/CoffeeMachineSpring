@@ -1,5 +1,6 @@
 package by.nc.training.dev3.coffee.interfaces;
 
+import by.nc.training.dev3.coffee.dto.UserForRegisterDto;
 import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 
@@ -8,4 +9,5 @@ import by.nc.training.dev3.coffee.exceptions.ServiceException;
  */
 public interface AuthorizationService {
     Account getByLogin(String login) throws ServiceException;
+     void registration(UserForRegisterDto userForRegisterDto)  throws ServiceException;
 }
