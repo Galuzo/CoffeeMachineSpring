@@ -6,7 +6,6 @@ import by.nc.training.dev3.coffee.dao.interfaces.IIngredientDao;
 import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
-import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

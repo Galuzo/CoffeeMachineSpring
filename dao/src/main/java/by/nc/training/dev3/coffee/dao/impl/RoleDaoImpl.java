@@ -2,9 +2,7 @@ package by.nc.training.dev3.coffee.dao.impl;
 
 import by.nc.training.dev3.coffee.dao.AbstractDao;
 import by.nc.training.dev3.coffee.dao.interfaces.IRoleDao;
-import by.nc.training.dev3.coffee.entities.Beverage;
 import by.nc.training.dev3.coffee.entities.Role;
-import org.apache.log4j.Logger;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
