@@ -45,8 +45,9 @@ public class CoffeeMachineServiceImpl implements CoffeeMachineService {
                 beverages.add(contentDto);
             }
         } catch (DaoException e) {
-            LOGGER.error(message+e);
             message="The beverages was not found";
+            LOGGER.error(message+e);
+
             throw new ServiceException(message, e);
         }
         return beverages;
@@ -63,6 +64,7 @@ public class CoffeeMachineServiceImpl implements CoffeeMachineService {
             }
         } catch (DaoException e) {
             message="The ingredients was not found";
+            LOGGER.error(message+e);
             throw new ServiceException(message, e);
         }
         return ingredients;

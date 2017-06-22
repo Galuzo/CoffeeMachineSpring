@@ -101,12 +101,14 @@ public class ClientServiceImpl implements ClientService {
                 else
                 {
                     message="The bill doesn`t match";
+                    LOGGER.error(message);
                     throw new ServiceException(message);
                 }
             }
             else
             {
                 message="The ingredient count is less then 0";
+                LOGGER.error(message);
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
@@ -140,6 +142,7 @@ public class ClientServiceImpl implements ClientService {
             }
             else {
                 message="The bill doesn`t match";
+                LOGGER.error(message);
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {
@@ -172,6 +175,7 @@ public class ClientServiceImpl implements ClientService {
             }
             else {
                 message="The bill doesn`t match";
+                LOGGER.error(message);
                 throw new ServiceException(message);
             }
         } catch (DaoException e) {

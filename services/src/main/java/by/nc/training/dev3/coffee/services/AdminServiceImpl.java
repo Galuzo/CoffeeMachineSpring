@@ -62,7 +62,7 @@ public class AdminServiceImpl implements AdminService {
             id=(Integer)dao.save(content);
         } catch (DaoException e) {
             message="Transaction is failed(addNewContent)";
-            LOGGER.error(message+e);
+            LOGGER.error(message+e.getMessage());
             throw new ServiceException(message,e);
         }
         return id;

@@ -20,8 +20,8 @@ public class BeverageDaoImpl extends AbstractDao<Beverage> implements IBeverageD
     private static final Logger LOGGER = LoggerFactory.getLogger(BeverageDaoImpl.class);
 
     @Autowired
-    protected BeverageDaoImpl(SessionFactory sessionFactory) {
-        super(Beverage.class,sessionFactory);
+    protected BeverageDaoImpl() {
+        super(Beverage.class);
     }
 
 

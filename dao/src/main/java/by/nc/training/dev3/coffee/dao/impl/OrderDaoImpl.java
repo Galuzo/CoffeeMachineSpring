@@ -26,9 +26,8 @@ import java.util.List;
 public class OrderDaoImpl extends AbstractDao<Order> implements IOrderDao {
     private static final Logger LOGGER = LoggerFactory.getLogger(OrderDaoImpl.class);
 
-    @Autowired
-    protected OrderDaoImpl(SessionFactory sessionFactory) {
-        super(Order.class,sessionFactory);
+    protected OrderDaoImpl() {
+        super(Order.class);
     }
 
     public List<Order> getByBill(Bill bill)throws DaoException {

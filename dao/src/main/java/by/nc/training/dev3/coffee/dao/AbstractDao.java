@@ -8,6 +8,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -21,13 +22,15 @@ import java.util.List;
 public abstract class AbstractDao <T extends AbstractEntity> implements IDao<T> {
     private static final Logger LOGGER = LoggerFactory.getLogger(AbstractDao.class);
 
-    protected SessionFactory sessionFactory;
     private Class persistentClass;
+    @Autowired
+    protected SessionFactory sessionFactory;
 
-    protected AbstractDao(Class persistentClass,SessionFactory sessionFactory){
+    protected AbstractDao(Class persistentClass){
         this.persistentClass = persistentClass;
-        this.sessionFactory = sessionFactory;
     }
+
+
     private String errorMessage="Error was thrown in DAO: ";
 
 

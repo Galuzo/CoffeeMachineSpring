@@ -8,8 +8,11 @@ import by.nc.training.dev3.coffee.entities.Account;
 import by.nc.training.dev3.coffee.entities.Bill;
 import by.nc.training.dev3.coffee.entities.Role;
 import by.nc.training.dev3.coffee.exceptions.DaoException;
+import by.nc.training.dev3.coffee.exceptions.RegisterException;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.AuthorizationService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,6 +24,8 @@ import org.springframework.transaction.interceptor.TransactionAspectSupport;
 @Service
 @Transactional
 public class AuthorizationServiceImpl implements AuthorizationService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(ClientServiceImpl.class);
+    private String message;
 
     @Autowired
     IUserDao userDao;
@@ -37,14 +42,16 @@ public class AuthorizationServiceImpl implements AuthorizationService {
         try {
             account=userDao.getByLogin(login);
         } catch (DaoException e) {
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
         return account;
 
     }
 
-    public void registration(UserForRegisterDto userForRegisterDto)  throws ServiceException{
+    public void registration(UserForRegisterDto userForRegisterDto)  throws RegisterException{
 
+        try {
             if (checkIsNewUser(userForRegisterDto.getLogin())) {
                 if (userForRegisterDto.getPassword().equals( userForRegisterDto.getRepeatedPassword())) {
                     try {
@@ -58,18 +65,24 @@ public class AuthorizationServiceImpl implements AuthorizationService {
                         userDao.save(account);
                         billDao.save(bill);
                     } catch (DaoException e) {
-                        throw new ServiceException(e);
+                        LOGGER.error(e.toString());
+                        throw new RegisterException(e);
                     }
                 }
                 else
                 {
-                    throw new ServiceException("passwords don't match");
+                    message="passwords don't match";
+                    LOGGER.error(message);
+                    throw new RegisterException(message);
                 }
             }
             else
             {
-                throw new ServiceException("This user is already consists");
+                throw new RegisterException(message);
             }
+        } catch (ServiceException e) {
+            LOGGER.error(e.toString());
+            throw new RegisterException(e);        }
 
     }
     private boolean checkIsNewUser(String login) throws ServiceException {
@@ -81,6 +94,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
             }
         }
         catch (DaoException e) {
+            LOGGER.error(e.toString());
             throw new ServiceException( e);
         }
         return isNew;

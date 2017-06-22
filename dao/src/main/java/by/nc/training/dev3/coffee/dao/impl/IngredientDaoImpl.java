@@ -16,9 +16,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class IngredientDaoImpl extends AbstractDao<Ingredient> implements IIngredientDao {
 
-    @Autowired
-    protected IngredientDaoImpl(SessionFactory sessionFactory) {
-        super(Ingredient.class,sessionFactory);
+    protected IngredientDaoImpl() {
+        super(Ingredient.class);
     }
 
 

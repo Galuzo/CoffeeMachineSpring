@@ -25,13 +25,4 @@ public class Tools {
     }
 
 
-    public static Content defineContent(ContentType contentType) {
-        switch (contentType) {
-            case BEVERAGE:
-                return new Beverage();
-            case INGREDIENT:
-                return new Ingredient();
-        }
-        return null;
-    }
 }

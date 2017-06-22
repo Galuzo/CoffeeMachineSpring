@@ -22,9 +22,8 @@ public class UserDaoImpl extends AbstractDao<Account> implements IUserDao {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoImpl.class);
     static String message;
 
-    @Autowired
-    protected UserDaoImpl(SessionFactory sessionFactory) {
-        super(Account.class,sessionFactory);
+    protected UserDaoImpl() {
+        super(Account.class);
     }
 
     public Account getByLogin(String login) throws DaoException {

@@ -19,7 +19,7 @@ public class CustomUsernamePasswordAuthenticationFilter extends UsernamePassword
         try {
             BufferedReader reader = request.getReader();
             StringBuffer sb = new StringBuffer();
-            String line = null;
+            String line;
             while ((line = reader.readLine()) != null) {
                 sb.append(line);
             }

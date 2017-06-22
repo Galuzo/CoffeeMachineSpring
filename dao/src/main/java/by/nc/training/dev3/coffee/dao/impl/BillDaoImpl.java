@@ -22,9 +22,8 @@ import org.springframework.stereotype.Repository;
 public class BillDaoImpl extends AbstractDao<Bill> implements IBillDao {
     private static final Logger LOGGER = LoggerFactory.getLogger(BillDaoImpl.class);
 
-    @Autowired
-    protected BillDaoImpl(SessionFactory sessionFactory) {
-        super(Bill.class,sessionFactory);
+    protected BillDaoImpl() {
+        super(Bill.class);
     }
 
 

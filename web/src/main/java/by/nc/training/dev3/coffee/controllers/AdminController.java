@@ -6,6 +6,9 @@ import by.nc.training.dev3.coffee.entities.Ingredient;
 import by.nc.training.dev3.coffee.enums.ContentType;
 import by.nc.training.dev3.coffee.exceptions.ServiceException;
 import by.nc.training.dev3.coffee.interfaces.AdminService;
+import by.nc.training.dev3.coffee.services.AdminServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +21,8 @@ import javax.websocket.server.PathParam;
 @RestController
 @RequestMapping("/admin/")
 public class AdminController {
+    private static final Logger LOGGER = LoggerFactory.getLogger(AdminController.class);
+    private String message;
 
     @Autowired
     private AdminService adminService;
@@ -27,10 +32,13 @@ public class AdminController {
     {
         try {
             if(contentForIncDto.getCount()>0) {
+                message = "Inc beverage was success";
                 adminService.addExistContentInMachine(ContentType.BEVERAGE, contentForIncDto);
+                LOGGER.info(message);
             }
         } catch (ServiceException e) {
-            e.printStackTrace();
+            message = "Inc beverage is not success";
+            LOGGER.error(message+e.toString());
         }
     }
 
@@ -39,10 +47,13 @@ public class AdminController {
     {
         try {
             if(contentForIncDto.getCount()>0) {
+                message = "Inc ingredient was success";
+                LOGGER.info(message);
                 adminService.addExistContentInMachine(ContentType.INGREDIENT,contentForIncDto);
             }
         } catch (ServiceException e) {
-            e.printStackTrace();
+            message = "Inc ingredient is not success";
+            LOGGER.error(message+e.toString());
         }
     }
 
@@ -50,35 +61,43 @@ public class AdminController {
     public void addNewBeverage(@RequestBody Beverage beverage) {
         try {
             adminService.addNewContentInMachine(ContentType.BEVERAGE, beverage);
+            message = "add beverage was success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "add beverage is not success";
+            LOGGER.error(message+e.toString());        }
     }
 
     @RequestMapping(value = "ingredients",method =RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addNewIngredient(@RequestBody Ingredient ingredient) {
         try {
             adminService.addNewContentInMachine(ContentType.BEVERAGE, ingredient);
+            message = "add beverage was success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "add ingredient is not success";
+            LOGGER.error(message+e.toString());          }
     }
 
     @RequestMapping(value = "beverages/{id}",method = RequestMethod.DELETE)
     public void removeBeverage(@PathVariable("id") int id) {
         try {
             adminService.removeContentFromMachine(ContentType.BEVERAGE,id);
+            message = "remove beverage was success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "remove beverage is not success";
+            LOGGER.error(message+e.toString());        }
     }
 
     @RequestMapping(value = "ingredients/{id}",method = RequestMethod.DELETE)
     public void removeIngredient(@PathVariable("id") int id) {
         try {
             adminService.removeContentFromMachine(ContentType.INGREDIENT,id);
+            message = "remove ingredient was success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "remove ingredient is not success";
+            LOGGER.error(message+e.toString());        }
     }
 }

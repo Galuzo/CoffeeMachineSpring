@@ -29,7 +29,6 @@ import java.util.*;
 @Transactional
 public class BillServiceImpl implements BillService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ClientServiceImpl.class);
-    private static  String message;
 
     @Autowired
     private IBillDao billDao;
@@ -55,6 +54,7 @@ public class BillServiceImpl implements BillService {
                 beverages.add(contentDto);
             }
         } catch (DaoException e) {
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
 
@@ -73,20 +73,22 @@ public class BillServiceImpl implements BillService {
                 ingredients.add(contentDto);
             }
         } catch (DaoException e) {
-            e.printStackTrace();
+            LOGGER.error(e.toString());
+            throw new ServiceException(e);
         }
 
         return ingredients;
     }
 
-    private List<Order> getOrders(int userId) {
+    private List<Order> getOrders(int userId) throws ServiceException {
         List<Order> orders=null;
         try {
             Account user = userDao.getById(userId);
             Bill bill=billDao.getById(user.getBill().getId());
             orders= orderDao.getByBill(bill);
         } catch (DaoException e) {
-            e.printStackTrace();
+            LOGGER.error(e.toString());
+            throw new ServiceException(e);
         }
         return orders;
     }
@@ -104,6 +106,7 @@ public class BillServiceImpl implements BillService {
                 orders.add(detailOrderDto);
             }
         } catch (DaoException e) {
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
         return orders;
@@ -121,9 +124,12 @@ public class BillServiceImpl implements BillService {
             return billDto;
 
         } catch (DaoException e) {
+            LOGGER.error(e.toString());
             throw new ServiceException(e);
         }
 
     }
+
+
 
 }

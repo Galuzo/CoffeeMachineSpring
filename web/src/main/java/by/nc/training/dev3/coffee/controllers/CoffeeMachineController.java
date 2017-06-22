@@ -23,6 +23,8 @@ import java.util.List;
 @RequestMapping("/machine")
 public class CoffeeMachineController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(CoffeeMachineController.class);
+    private String message;
 
     @Autowired
     CoffeeMachineService coffeeMachineService;
@@ -34,9 +36,11 @@ public class CoffeeMachineController {
         List<ContentDto> beverages=null;
         try {
             beverages=coffeeMachineService.showBeverageInMachine();
+            message = "get all beverages was  success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "get all beverages is success";
+            LOGGER.error(message);        }
         return beverages;
     }
 
@@ -46,9 +50,11 @@ public class CoffeeMachineController {
         List<ContentDto> ingredients=null;
         try {
             ingredients=coffeeMachineService.showIngredientsInMachine();
+            message = "get all ingredients was success";
+            LOGGER.info(message);
         } catch (ServiceException e) {
-            e.printStackTrace();
-        }
+            message = "get all ingredients is success";
+            LOGGER.error(message);           }
         return ingredients;
     }
 
